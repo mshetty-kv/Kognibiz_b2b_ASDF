@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Communities (Digital Experiences) settings required by the Office Depot storefront.
+
+  enableOotbProfExtUserOpsEnable is the metadata name of the Setup checkbox
+  "Allow using standard external profiles for self-registration, user creation, and login"
+  (Setup > Digital Experiences > Settings).
+
+  Without it, creating an external buyer User on a STANDARD profile such as
+  "Customer Community Plus User" fails with:
+    FIELD_INTEGRITY_EXCEPTION - "To create or update users for this profile, go to Setup >
+    Digital Experiences > Settings and select Allow using standard external profiles for
+    self-registration, user creation, and login.: Profile ID"
+  Observed against scratch org 00DG100000EKcgz on 2026-09-21, where the value defaults to false.
+  The Developer Edition sandbox 00DgL00000L7NwjUAF already had it true, which is why its six
+  buyer users could be created without hitting this.
+
+  Capturing it here turns what the error message presents as a manual Setup-UI step into a
+  deployable metadata change - it does NOT need to be done by hand.
+-->
+<CommunitiesSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableNetworksEnabled>true</enableNetworksEnabled>
+    <enableOotbProfExtUserOpsEnable>true</enableOotbProfExtUserOpsEnable>
+</CommunitiesSettings>

@@ -1,0 +1,38 @@
+<template>
+    <nav class="od-nav" aria-label="Primary" onkeydown={handleKeydown}>
+        <div class="od-nav-inner">
+            <a href={allUrl} class="od-all od-focusable">
+                <span class="od-burger" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                </span>
+                <span class="od-all-label">{allLabel}</span>
+            </a>
+
+            <ul class="od-nav-links">
+                <template for:each={links} for:item="link">
+                    <li key={link.key}>
+                        <a href={link.url} class="od-nav-link od-focusable">{link.label}</a>
+                    </li>
+                </template>
+            </ul>
+
+            <div class="od-lists">
+                <button type="button" class="od-nav-link od-lists-trigger od-focusable"
+                        onclick={handleListsToggle} aria-haspopup="true"
+                        aria-expanded={listsExpanded}>
+                    {listsLabel}
+                    <span class="od-caret" aria-hidden="true">&#9662;</span>
+                </button>
+                <ul class={listsMenuClass} role="menu" aria-label="Your lists">
+                    <template for:each={listItems} for:item="item">
+                        <li key={item.key} role="none">
+                            <a href={item.url} role="menuitem" class="od-lists-item od-focusable">
+                                {item.label}
+                            </a>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</template>

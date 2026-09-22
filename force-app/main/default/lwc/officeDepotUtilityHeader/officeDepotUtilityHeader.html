@@ -1,0 +1,58 @@
+<template>
+    <header class="od-util" role="banner">
+        <div class="od-util-inner">
+            <a href={homeUrl} class="od-brand od-focusable" aria-label="Office Depot Business home">
+                <span class="od-brand-name">{brandName}</span>
+                <span class="od-brand-suffix">{brandSuffix}</span>
+            </a>
+
+            <button type="button" class="od-deliver od-focusable" aria-label="Change delivery location">
+                <span class="od-pin" aria-hidden="true">&#9679;</span>
+                <span class="od-deliver-text">
+                    <span class="od-deliver-lead">Deliver to</span>
+                    <span class="od-deliver-city">{deliverToCity}</span>
+                </span>
+            </button>
+
+            <div class="od-search" role="search">
+                <label class="od-visually-hidden" for="od-scope">Search category</label>
+                <select id="od-scope" class="od-scope od-focusable" onchange={handleScopeChange}>
+                    <template for:each={scopes} for:item="s">
+                        <option key={s.key} value={s.value}>{s.label}</option>
+                    </template>
+                </select>
+                <label class="od-visually-hidden" for="od-term">Search products</label>
+                <input id="od-term" type="search" class="od-term od-focusable"
+                       placeholder={searchPlaceholder} value={searchTerm}
+                       oninput={handleTermChange} onkeydown={handleSearchKey} />
+                <button type="button" class="od-search-btn od-focusable"
+                        onclick={handleSearchClick} aria-label="Submit search">
+                    <span aria-hidden="true">&#9906;</span>
+                </button>
+            </div>
+
+            <template if:true={showLanguage}>
+                <button type="button" class="od-util-link od-focusable" aria-label="Change language">
+                    <span class="od-util-lead" aria-hidden="true">&#127760;</span>
+                    <span class="od-util-strong">{languageLabel}</span>
+                </button>
+            </template>
+
+            <a href={accountUrl} class="od-util-link od-focusable">
+                <span class="od-util-lead">{greeting}</span>
+                <span class="od-util-strong">{accountLine}</span>
+            </a>
+
+            <a href={ordersUrl} class="od-util-link od-focusable">
+                <span class="od-util-lead">Returns</span>
+                <span class="od-util-strong">&amp; Orders</span>
+            </a>
+
+            <a href={cartUrl} class="od-cart od-focusable" aria-label={cartAriaLabel}>
+                <span class="od-cart-count" aria-hidden="true">{cartCountLabel}</span>
+                <span class="od-cart-glyph" aria-hidden="true">&#128722;</span>
+                <span class="od-util-strong">Cart</span>
+            </a>
+        </div>
+    </header>
+</template>

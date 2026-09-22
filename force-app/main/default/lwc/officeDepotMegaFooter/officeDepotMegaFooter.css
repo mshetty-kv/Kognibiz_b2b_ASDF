@@ -1,0 +1,111 @@
+@import 'c/officeDepotTokens';
+
+.od-footer { margin-top: 18px; }
+
+.od-top {
+    width: 100%;
+    background: var(--od-chrome-light);
+    color: #fff;
+    border: none;
+    padding: 15px 0;
+    font-size: var(--od-fs-base);
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.od-top:hover { background: #485769; }
+
+.od-footer-main { background: var(--od-chrome-dark); color: #fff; padding: 30px 0 0; }
+
+.od-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--od-gap-lg);
+    padding-bottom: 28px;
+}
+
+.od-footer-head {
+    margin: 0 0 10px;
+    font-size: var(--od-fs-lg);
+    font-weight: 700;
+    color: #fff;
+}
+
+.od-footer-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
+
+.od-footer-link {
+    color: #ddd;
+    text-decoration: none;
+    font-size: var(--od-fs-base);
+}
+
+.od-footer-link:hover { color: #fff; text-decoration: underline; }
+
+/*
+ * Rows that are text, not links. Deliberately dimmer than .od-footer-link and with no hover
+ * affordance, so a buyer is not invited to click something that has no destination in this store.
+ */
+.od-footer-text {
+    color: #9aa4b1;
+    font-size: var(--od-fs-base);
+    cursor: default;
+}
+
+.od-footer-mid {
+    border-top: 1px solid #3a4553;
+    padding: 20px 14px 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--od-gap-lg);
+    flex-wrap: wrap;
+}
+
+.od-footer-brand { display: flex; align-items: baseline; gap: 5px; text-decoration: none; }
+.od-footer-brand-name { color: #fff; font-size: var(--od-fs-xl); font-weight: 800; }
+.od-footer-brand-suffix { color: var(--od-accent); font-size: var(--od-fs-sm); font-weight: 700; }
+
+.od-locale { display: flex; gap: var(--od-gap-sm); flex-wrap: wrap; }
+
+.od-locale-btn {
+    background: none;
+    border: 1px solid #5c6a7a;
+    color: #ddd;
+    border-radius: var(--od-radius-sm);
+    padding: 6px 11px;
+    font-size: var(--od-fs-sm);
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.od-locale-btn:hover { border-color: #fff; color: #fff; }
+
+.od-apps { display: flex; gap: var(--od-gap-sm); flex-wrap: wrap; }
+
+/* Plain text chips - deliberately NOT reproductions of the App Store or Google Play marks. */
+.od-app-badge {
+    border: 1px solid #5c6a7a;
+    border-radius: var(--od-radius-sm);
+    padding: 6px 11px;
+    font-size: var(--od-fs-sm);
+    color: #ddd;
+}
+
+.od-footer-legal { background: var(--od-chrome-darker); color: #ddd; padding: 20px 0 30px; }
+
+.od-legal-inner { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+
+.od-legal-links { list-style: none; display: flex; gap: var(--od-gap); margin: 0; padding: 0; flex-wrap: wrap; }
+
+.od-legal-link { color: #ddd; font-size: var(--od-fs-sm); text-decoration: none; }
+.od-legal-link:hover { text-decoration: underline; color: #fff; }
+
+.od-legal-line { margin: 0; font-size: var(--od-fs-xs); color: #999; text-align: center; }
+
+@media (max-width: 900px) {
+    .od-footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 520px) {
+    .od-footer-grid { grid-template-columns: 1fr; }
+}

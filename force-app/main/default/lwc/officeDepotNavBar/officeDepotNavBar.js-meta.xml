@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Office Depot Nav Bar</masterLabel>
+    <description>Secondary nav strip with an All launcher, shortcut links and a Lists dropdown.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="allLabel" type="String" default="All" label="Launcher label"/>
+            <property name="categoryUrl" type="String" default="/" label="Launcher URL (e.g. /category/&lt;rootCategoryId&gt;)"/>
+            <property name="listsLabel" type="String" default="Lists" label="Lists menu label"/>
+            <property name="link1Label" type="String" label="Link 1 label"/>
+            <property name="link1Url" type="String" label="Link 1 URL"/>
+            <property name="link2Label" type="String" label="Link 2 label"/>
+            <property name="link2Url" type="String" label="Link 2 URL"/>
+            <property name="link3Label" type="String" label="Link 3 label"/>
+            <property name="link3Url" type="String" label="Link 3 URL"/>
+            <property name="link4Label" type="String" label="Link 4 label"/>
+            <property name="link4Url" type="String" label="Link 4 URL"/>
+            <property name="link5Label" type="String" label="Link 5 label"/>
+            <property name="link5Url" type="String" label="Link 5 URL"/>
+            <property name="link6Label" type="String" label="Link 6 label"/>
+            <property name="link6Url" type="String" label="Link 6 URL"/>
+            <property name="orderListUrl" type="String" default="/OrderSummary/OrderSummary/Default" label="Order list URL"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

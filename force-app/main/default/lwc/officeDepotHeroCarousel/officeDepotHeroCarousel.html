@@ -1,0 +1,58 @@
+<template>
+    <section
+        class="od-hero"
+        role="region"
+        aria-roledescription="carousel"
+        aria-label="Office Depot featured promotions"
+        onkeydown={handleKeydown}
+        onmouseenter={handleMouseEnter}
+        onmouseleave={handleMouseLeave}
+        onfocusin={handleFocusIn}
+        onfocusout={handleFocusOut}
+    >
+        <div class="od-viewport" style={viewportStyle}>
+            <div class="od-track" style={trackStyle}>
+                <template for:each={slides} for:item="slide">
+                    <div key={slide.key} class={slide.slideClass} role="group"
+                         aria-roledescription="slide" aria-label={slide.label}
+                         aria-hidden={slide.ariaHidden}>
+                        <div class="od-slide-inner od-shell">
+                            <p class="od-eyebrow">{slide.eyebrow}</p>
+                            <h2 class="od-title">{slide.title}</h2>
+                            <p class="od-body">{slide.body}</p>
+                            <a href={slide.url} class="od-cta od-focusable">{slide.cta}</a>
+                        </div>
+                    </div>
+                </template>
+            </div>
+
+            <button type="button" class="od-arrow od-arrow--prev od-focusable"
+                    onclick={handlePrevious} aria-label="Previous slide">
+                <span aria-hidden="true">&#8249;</span>
+            </button>
+            <button type="button" class="od-arrow od-arrow--next od-focusable"
+                    onclick={handleNext} aria-label="Next slide">
+                <span aria-hidden="true">&#8250;</span>
+            </button>
+
+            <div class="od-fade" aria-hidden="true"></div>
+        </div>
+
+        <div class="od-controls">
+            <div class="od-dots">
+                <template for:each={dots} for:item="dot">
+                    <button key={dot.key} type="button" class={dot.dotClass} data-index={dot.index}
+                            onclick={handleDot} aria-label={dot.label} aria-pressed={dot.pressed}></button>
+                </template>
+            </div>
+            <template if:true={showAutoControls}>
+                <button type="button" class="od-pause od-focusable" onclick={handleTogglePause}
+                        aria-label={pauseLabel}>
+                    <span aria-hidden="true">{pauseGlyph}</span>
+                </button>
+            </template>
+        </div>
+
+        <span class="od-visually-hidden" aria-live="polite">{liveMessage}</span>
+    </section>
+</template>

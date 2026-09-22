@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Office Depot Mega Footer</masterLabel>
+    <description>Multi-column link footer with back-to-top bar, brand lockup, locale selectors and a dark legal bar.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="brandName" type="String" default="Office Depot" label="Brand name"/>
+            <property name="legalLine" type="String" default="Office Depot B2B Commerce demo storefront. Built for ASDF capability validation." label="Legal line"/>
+            <property name="showLocale" type="Boolean" default="true" label="Show language and country selectors"/>
+            <property name="catalogUrl" type="String" default="/" label="Catalog browse URL (e.g. /category/&lt;rootCategoryId&gt;)"/>
+            <property name="ordersUrl" type="String" default="/OrderSummary/OrderSummary/Default" label="Order list URL"/>
+            <property name="accountUrl" type="String" default="/myprofile" label="My account URL"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

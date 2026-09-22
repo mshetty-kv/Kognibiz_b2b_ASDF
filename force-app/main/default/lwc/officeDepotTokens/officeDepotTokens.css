@@ -1,0 +1,139 @@
+/*
+ * officeDepotTokens - the ONE place colour, spacing and type are defined.
+ *
+ * This is an LWC CSS module. Every Office Depot home-page component does
+ *   @import 'c/officeDepotTokens';
+ * as the first line of its stylesheet, so no component ever hardcodes a hex value.
+ *
+ * PROVENANCE, stated honestly: these values were supplied in the build brief as the
+ * Amazon Business palette. I did NOT sample them from the reference screenshots, because the
+ * screenshots were never available to me as files in this workspace - only as a description.
+ * If exact fidelity matters, re-sample and change them here; nothing else needs to change.
+ *
+ * SCOPE: colour and layout only. No Amazon logo, wordmark, smile-arrow device or product
+ * photography is reproduced anywhere in this component set.
+ */
+
+:host {
+    /* Surfaces */
+    --od-bg-page: #ffffff;
+    --od-bg-band: #f7f8f8;
+    --od-bg-band-alt: #eaeded;
+    --od-bg-card: #ffffff;
+    --od-border: #d5d9d9;
+    --od-border-strong: #888c8c;
+
+    /* Header / footer chrome */
+    --od-chrome-dark: #232f3e;
+    --od-chrome-darker: #131a22;
+    --od-chrome-light: #37475a;
+    --od-chrome-text: #ffffff;
+    --od-chrome-text-muted: #cccccc;
+
+    /* Accents */
+    --od-accent: #ff9900;
+    --od-accent-hover: #f08804;
+    --od-accent-contrast: #0f1111;
+    --od-link: #007185;
+    --od-link-hover: #c7511f;
+    --od-deal-red: #cc0c39;
+    --od-savings-green: #067d62;
+
+    /* Office Depot brand red - used for the logo lockup and primary CTAs so the page
+       reads as Office Depot rather than as a clone of the reference site. */
+    --od-brand: #c8102e;
+    --od-brand-dark: #9e0c23;
+
+    /* Text */
+    --od-text: #0f1111;
+    --od-text-secondary: #565959;
+    --od-text-muted: #6f7373;
+
+    /* Type */
+    --od-font: "Amazon Ember", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+    --od-fs-xs: 0.6875rem;
+    --od-fs-sm: 0.75rem;
+    --od-fs-base: 0.8125rem;
+    --od-fs-md: 0.875rem;
+    --od-fs-lg: 1rem;
+    --od-fs-xl: 1.25rem;
+    --od-fs-2xl: 1.5rem;
+
+    /* Shape & depth */
+    --od-radius-sm: 4px;
+    --od-radius: 8px;
+    --od-radius-pill: 999px;
+    --od-shadow-card: 0 2px 5px rgba(15, 17, 17, 0.15);
+    --od-shadow-pop: 0 4px 14px rgba(15, 17, 17, 0.22);
+
+    /* Rhythm */
+    --od-gap-xs: 4px;
+    --od-gap-sm: 8px;
+    --od-gap: 14px;
+    --od-gap-lg: 22px;
+    --od-maxw: 1500px;
+
+    /* Focus - accessibility requirement, must stay visible against every surface */
+    --od-focus-ring: 0 0 0 3px #e77600, 0 0 3px 4px rgba(228, 121, 17, 0.5);
+
+    display: block;
+    font-family: var(--od-font);
+    color: var(--od-text);
+    box-sizing: border-box;
+}
+
+/* Shared primitives every component reuses. */
+.od-shell {
+    max-width: var(--od-maxw);
+    margin: 0 auto;
+    padding: 0 14px;
+    box-sizing: border-box;
+}
+
+.od-card {
+    background: var(--od-bg-card);
+    border-radius: var(--od-radius);
+    padding: 18px;
+    box-sizing: border-box;
+}
+
+.od-h2 {
+    font-size: var(--od-fs-xl);
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 12px;
+    color: var(--od-text);
+}
+
+.od-link {
+    color: var(--od-link);
+    text-decoration: none;
+    font-size: var(--od-fs-base);
+}
+
+.od-link:hover {
+    color: var(--od-link-hover);
+    text-decoration: underline;
+}
+
+/* Every interactive element gets the same visible focus treatment. */
+.od-focusable:focus-visible,
+a:focus-visible,
+button:focus-visible {
+    outline: none;
+    box-shadow: var(--od-focus-ring);
+    border-radius: var(--od-radius-sm);
+}
+
+.od-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

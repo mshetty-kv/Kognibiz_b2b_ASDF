@@ -1,0 +1,37 @@
+{
+  "orgName": "Office Depot B2B Commerce (LWR)",
+  "edition": "Enterprise",
+  "features": [
+    "B2BCommerce",
+    "Communities",
+    "Sites",
+    "SalesforceIdentityForCommunities",
+    "ExternalIdentityLogin",
+    "OrderManagement",
+    "EnableSetPasswordInApi",
+    "AuthorApex"
+  ],
+  "settings": {
+    "commerceSettings": {
+      "commerceEnabled": true,
+      "commerceAppEnabled": true
+    },
+    "communitiesSettings": {
+      "enableNetworksEnabled": true
+    },
+    "experienceBundleSettings": {
+      "enableExperienceBundleMetadata": true
+    },
+    "orderSettings": {
+      "enableOrders": true,
+      "enableEnhancedCommerceOrders": true,
+      "enableOptionalPricebook": true
+    },
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    }
+  }
+}

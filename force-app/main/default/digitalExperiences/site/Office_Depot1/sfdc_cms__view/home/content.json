@@ -1,0 +1,248 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Home",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "dxpStyle": {},
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "none",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"0d000000-0000-4000-8000-000000000001\",\"columns\":[{\"UUID\":\"0c000000-0000-4000-8000-000000000002\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "dxpStyle": {},
+                        "autoAdvance": true,
+                        "intervalSeconds": 6,
+                        "carouselHeight": 360,
+                        "slide1Eyebrow": "Office Depot Business",
+                        "slide1Title": "Everything your workplace runs on",
+                        "slide1Body": "Contract pricing on every business essential, from paper to workstations.",
+                        "slide1CtaLabel": "Shop the catalog",
+                        "slide1CtaUrl": "/category/0ZGgL000000nFXNWA2",
+                        "slide1Theme": "navy",
+                        "slide2Eyebrow": "Save 18% every day",
+                        "slide2Title": "Your negotiated price, applied automatically",
+                        "slide2Body": "Every product shows your business price next to the list price.",
+                        "slide2CtaLabel": "See your pricing",
+                        "slide2CtaUrl": "/category/0ZGgL000000nFXNWA2",
+                        "slide2Theme": "teal",
+                        "slide3Eyebrow": "Workspace refresh",
+                        "slide3Title": "Desks, chairs and monitors built for long days",
+                        "slide3Body": "Ergonomic seating and sit-stand desks, ready for bulk ordering.",
+                        "slide3CtaLabel": "Shop furniture",
+                        "slide3CtaUrl": "/category/0ZGgL000000nFXQWA2",
+                        "slide3Theme": "amber",
+                        "slide4Eyebrow": "Breakroom and cleaning",
+                        "slide4Title": "Keep the whole floor stocked",
+                        "slide4Body": "Coffee, snacks and disinfecting supplies in case quantities.",
+                        "slide4CtaLabel": "Shop breakroom",
+                        "slide4CtaUrl": "/category/0ZGgL000000nFXRWA2",
+                        "slide4Theme": "plum"
+                      },
+                      "definition": "c:officeDepotHeroCarousel",
+                      "id": "0a000000-0000-4000-8000-000000000003",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "0c000000-0000-4000-8000-000000000002",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "0d000000-0000-4000-8000-000000000001",
+              "type": "component"
+            },
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "dxpStyle": {},
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "none",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"0d000000-0000-4000-8000-000000000004\",\"columns\":[{\"UUID\":\"0c000000-0000-4000-8000-000000000005\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "dxpStyle": {},
+                        "overlapHero": true,
+                        "tile1Icon": "gift",
+                        "tile1Title": "Welcome offer",
+                        "tile1Body": "New to Office Depot Business? Your contract pricing is already applied.",
+                        "tile1CtaLabel": "See your price",
+                        "tile1CtaUrl": "/category/0ZGgL000000nFXNWA2",
+                        "tile2Icon": "receipt",
+                        "tile2Title": "Bills & recharges",
+                        "tile2Body": "Reorder from past purchases and track every invoice in one place.",
+                        "tile2CtaLabel": "Go to orders",
+                        "tile2CtaUrl": "/OrderSummary/OrderSummary/Default",
+                        "tile3Icon": "box",
+                        "tile3Title": "Business essentials",
+                        "tile3Body": "Paper, ink, breakroom and cleaning supplies in case quantities.",
+                        "tile3CtaLabel": "Shop essentials",
+                        "tile3CtaUrl": "/category/0ZGgL000000nFXOWA2",
+                        "tile4Icon": "chart",
+                        "tile4Title": "Your business savings",
+                        "tile4Body": "You save 18% against list price on every catalog item.",
+                        "tile4CtaLabel": "View savings",
+                        "tile4CtaUrl": "/category/0ZGgL000000nFXNWA2"
+                      },
+                      "definition": "c:officeDepotPromoTiles",
+                      "id": "0a000000-0000-4000-8000-000000000006",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "0c000000-0000-4000-8000-000000000005",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "0d000000-0000-4000-8000-000000000004",
+              "type": "component"
+            },
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "dxpStyle": {},
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "none",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"0d000000-0000-4000-8000-000000000007\",\"columns\":[{\"UUID\":\"0c000000-0000-4000-8000-000000000008\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "dxpStyle": {},
+                        "headingPrefix": "Bestsellers in",
+                        "maxCategories": 6,
+                        "productsPerRail": 8,
+                        "showRatings": true,
+                        "showSavingsChip": true
+                      },
+                      "definition": "c:officeDepotProductRails",
+                      "id": "0a000000-0000-4000-8000-000000000009",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "0c000000-0000-4000-8000-000000000008",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "0d000000-0000-4000-8000-000000000007",
+              "type": "component"
+            },
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "dxpStyle": {},
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "none",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"0d000000-0000-4000-8000-000000000010\",\"columns\":[{\"UUID\":\"0c000000-0000-4000-8000-000000000011\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "dxpStyle": {},
+                        "heading": "Deals by category",
+                        "maxCategories": 4
+                      },
+                      "definition": "c:officeDepotCategoryDeals",
+                      "id": "0a000000-0000-4000-8000-000000000012",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "0c000000-0000-4000-8000-000000000011",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "0d000000-0000-4000-8000-000000000010",
+              "type": "component"
+            }
+          ],
+          "id": "2eea741e-4ae3-43ce-911e-d2eac998f40c",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "Office Depot Business storefront - contract pricing on office supplies, technology, furniture, breakroom and cleaning.",
+                "dxpStyle": {},
+                "pageTitle": "Office Depot Business",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "c16abb44-f145-437d-b412-9164347eb826",
+              "type": "component"
+            }
+          ],
+          "id": "c455e7bf-a48d-4d56-b5a5-276517f93858",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "14eab42d-cd88-44c3-842f-8e5ceeb187fd",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "home"
+  },
+  "urlName": "home"
+}

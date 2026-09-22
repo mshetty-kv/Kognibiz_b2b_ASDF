@@ -1,0 +1,54 @@
+@import 'c/officeDepotTokens';
+
+.od-promo-wrap { background: var(--od-bg-band); padding: 0 0 18px; }
+
+.od-promo-row {
+    list-style: none;
+    margin: 0;
+    padding: 18px 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--od-gap);
+}
+
+/* Pulls the tile row up over the hero's lower fade, as the reference does. */
+.od-promo-row--overlap { margin-top: -74px; padding-top: 0; position: relative; z-index: 3; }
+
+.od-promo {
+    background: var(--od-bg-card);
+    border-radius: var(--od-radius);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: var(--od-shadow-card);
+    min-height: 168px;
+}
+
+.od-icon { font-size: 1.5rem; line-height: 1; }
+
+.od-promo-title {
+    margin: 2px 0 0;
+    font-size: var(--od-fs-lg);
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--od-text);
+}
+
+.od-promo-body {
+    margin: 0;
+    font-size: var(--od-fs-base);
+    color: var(--od-text-secondary);
+    flex: 1;
+    line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+    .od-promo-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .od-promo-row--overlap { margin-top: -40px; }
+}
+
+@media (max-width: 520px) {
+    .od-promo-row { grid-template-columns: 1fr; }
+    .od-promo-row--overlap { margin-top: 0; padding-top: 14px; }
+}

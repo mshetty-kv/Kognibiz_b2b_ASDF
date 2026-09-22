@@ -1,0 +1,64 @@
+<template>
+    <footer class="od-footer">
+        <button type="button" class="od-top od-focusable" onclick={handleBackToTop}>
+            Back to top
+        </button>
+
+        <div class="od-footer-main">
+            <div class="od-shell od-footer-grid">
+                <template for:each={columns} for:item="col">
+                    <div key={col.key} class="od-footer-col">
+                        <h2 class="od-footer-head">{col.heading}</h2>
+                        <ul class="od-footer-list">
+                            <template for:each={col.links} for:item="link">
+                                <li key={link.key}>
+                                    <template if:true={link.isLink}>
+                                        <a href={link.url} class="od-footer-link od-focusable">{link.label}</a>
+                                    </template>
+                                    <template if:false={link.isLink}>
+                                        <span class="od-footer-text">{link.label}</span>
+                                    </template>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                </template>
+            </div>
+
+            <div class="od-shell od-footer-mid">
+                <a href={homeUrl} class="od-footer-brand od-focusable">
+                    <span class="od-footer-brand-name">{brandName}</span>
+                    <span class="od-footer-brand-suffix">Business</span>
+                </a>
+                <template if:true={showLocale}>
+                    <div class="od-locale">
+                        <button type="button" class="od-locale-btn od-focusable" aria-label="Change language">
+                            <span aria-hidden="true">&#127760;</span> English
+                        </button>
+                        <button type="button" class="od-locale-btn od-focusable" aria-label="Change currency">
+                            USD - US Dollar
+                        </button>
+                        <button type="button" class="od-locale-btn od-focusable" aria-label="Change country">
+                            United States
+                        </button>
+                    </div>
+                </template>
+                <div class="od-apps" aria-label="Mobile apps">
+                    <span class="od-app-badge">Get the mobile app</span>
+                    <span class="od-app-badge">Business buyer app</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="od-footer-legal">
+            <div class="od-shell od-legal-inner">
+                <ul class="od-legal-links">
+                    <li><a href={termsUrl} class="od-legal-link od-focusable">Conditions of Use</a></li>
+                    <li><a href={privacyUrl} class="od-legal-link od-focusable">Privacy Notice</a></li>
+                    <li><a href={privacyUrl} class="od-legal-link od-focusable">Interest-Based Ads</a></li>
+                </ul>
+                <p class="od-legal-line">{legalLine}</p>
+            </div>
+        </div>
+    </footer>
+</template>

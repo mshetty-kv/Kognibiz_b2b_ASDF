@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Office Depot Buyer Access
+  SUPPLEMENTS - does not replace - the standard, org-verified permission set `B2BBuyer`
+  (Label "Buyer", NamespacePrefix "force") and the permission set license `B2BBuyerPsl`.
+
+  Verified against target org 00DgL00000L7NwjUAF on 2026-09-21:
+    SELECT Name, Label FROM PermissionSet WHERE Name = 'B2BBuyer'      -> B2BBuyer / Buyer
+    SELECT DeveloperName FROM PermissionSetLicense WHERE DeveloperName = 'B2BBuyerPsl' -> present (40 seats, 10 used)
+  The standard `B2BBuyer` permission set is NOT retrievable via Metadata API
+  (retrieve of PermissionSet:B2BBuyer returned zero files), therefore it cannot be
+  source-controlled or extended in place - only assigned. Hence this additive set.
+
+  Only objects empirically confirmed to accept object permissions in this org were used
+  (SELECT SobjectType FROM ObjectPermissions GROUP BY SobjectType).
+  Junction objects BuyerGroupMember, CommerceEntitlementProduct, CommerceEntitlementBuyerGroup,
+  PricebookEntry and WebStoreNetwork returned no rows and therefore are intentionally absent.
+-->
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>OfficeDepotStorefrontController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>Office Depot storefront buyer access. Assign IN ADDITION TO the standard B2BBuyer permission set and the B2BBuyerPsl permission set license. Read-only catalog visibility; entitlement still governs what the buyer actually sees.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Office Depot Buyer Access</label>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Product2</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>ProductCatalog</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>ProductCategory</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>ProductCategoryProduct</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+</PermissionSet>

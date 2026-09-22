@@ -1,0 +1,139 @@
+@import 'c/officeDepotTokens';
+
+.od-rails { background: var(--od-bg-band); padding: 0 0 18px; }
+
+.od-rail-card { margin-bottom: 18px; }
+
+.od-rail-head { display: flex; align-items: baseline; gap: var(--od-gap); flex-wrap: wrap; }
+
+.od-deal-badge {
+    background: var(--od-deal-red);
+    color: #fff;
+    font-size: var(--od-fs-sm);
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: var(--od-radius-sm);
+}
+
+.od-rail-body { position: relative; }
+
+.od-scroller {
+    display: flex;
+    gap: var(--od-gap);
+    list-style: none;
+    margin: 0;
+    padding: 4px 2px 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+.od-scroller::-webkit-scrollbar { height: 6px; }
+.od-scroller::-webkit-scrollbar-thumb { background: var(--od-border-strong); border-radius: 3px; }
+
+.od-tile {
+    flex: 0 0 auto;
+    width: 186px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.od-tile-link { text-decoration: none; color: inherit; display: block; }
+
+.od-thumb {
+    background: var(--od-bg-page);
+    border: 1px solid var(--od-border);
+    border-radius: var(--od-radius-sm);
+    height: 176px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.od-thumb img { width: 100%; height: 100%; object-fit: contain; }
+
+.od-name {
+    margin: 6px 0 0;
+    font-size: var(--od-fs-base);
+    line-height: 1.35;
+    color: var(--od-text);
+    /* 2-line clamp, exactly as the reference cards do it */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.7em;
+}
+
+.od-tile-link:hover .od-name { color: var(--od-link-hover); text-decoration: underline; }
+
+.od-rating { display: flex; align-items: center; gap: 5px; }
+.od-stars { color: var(--od-accent); font-size: var(--od-fs-md); letter-spacing: 1px; }
+.od-reviews { color: var(--od-link); font-size: var(--od-fs-sm); }
+
+.od-price-row { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+
+.od-price { font-size: var(--od-fs-xl); font-weight: 600; color: var(--od-text); }
+
+.od-list {
+    font-size: var(--od-fs-sm);
+    color: var(--od-text-secondary);
+    text-decoration: line-through;
+}
+
+.od-pct { font-size: var(--od-fs-sm); color: var(--od-deal-red); font-weight: 700; }
+
+.od-savings {
+    align-self: flex-start;
+    background: var(--od-savings-green);
+    color: #fff;
+    font-size: var(--od-fs-xs);
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: var(--od-radius-sm);
+}
+
+.od-scroll {
+    position: absolute;
+    top: 60px;
+    width: 34px;
+    height: 88px;
+    border: 1px solid var(--od-border);
+    background: rgba(255, 255, 255, 0.95);
+    cursor: pointer;
+    font-size: 1.7rem;
+    line-height: 1;
+    color: var(--od-text);
+    border-radius: var(--od-radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.od-scroll:hover { box-shadow: var(--od-shadow-card); }
+.od-scroll--left { left: -6px; }
+.od-scroll--right { right: -6px; }
+
+.od-rail-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--od-gap);
+    padding-top: 6px;
+    border-top: 1px solid var(--od-border);
+    margin-top: 4px;
+}
+
+.od-page { font-size: var(--od-fs-sm); color: var(--od-text-secondary); }
+
+.od-error { border-left: 4px solid var(--od-deal-red); }
+.od-error-detail { font-size: var(--od-fs-sm); color: var(--od-text-secondary); margin: 4px 0 0; }
+
+@media (max-width: 640px) {
+    .od-tile { width: 150px; }
+    .od-thumb { height: 140px; }
+    .od-scroll { display: none; }
+}

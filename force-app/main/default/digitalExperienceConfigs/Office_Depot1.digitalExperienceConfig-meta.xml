@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DigitalExperienceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Office Depot</label>
+    <site>
+        <urlPathPrefix>officedepot</urlPathPrefix>
+    </site>
+    <space>site/Office_Depot1</space>
+</DigitalExperienceConfig>

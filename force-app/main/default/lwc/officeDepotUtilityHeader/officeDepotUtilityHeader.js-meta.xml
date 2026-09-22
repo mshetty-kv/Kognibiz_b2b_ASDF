@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Office Depot Utility Header</masterLabel>
+    <description>Top utility strip: brand lockup, deliver-to selector, category-scoped search, account menu, Returns and Orders, and cart badge.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="brandName" type="String" default="Office Depot" label="Brand name"/>
+            <property name="brandSuffix" type="String" default="Business" label="Brand suffix"/>
+            <property name="deliverToCity" type="String" default="San Francisco 94105" label="Deliver-to location"/>
+            <property name="searchPlaceholder" type="String" default="Search Office Depot Business" label="Search placeholder"/>
+            <property name="searchUrl" type="String" default="/global-search" label="Search results route (term is appended as a path segment)"/>
+            <property name="orderListUrl" type="String" default="/OrderSummary/OrderSummary/Default" label="Order list URL"/>
+            <property name="showLanguage" type="Boolean" default="true" label="Show language selector"/>
+            <property name="languageLabel" type="String" default="EN" label="Language label"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

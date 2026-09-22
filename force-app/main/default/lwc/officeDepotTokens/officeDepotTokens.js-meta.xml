@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <isExposed>false</isExposed>
+    <masterLabel>Office Depot Design Tokens</masterLabel>
+    <description>CSS-only module. Single source of truth for the Office Depot storefront colour, type and spacing tokens. Imported by every home-page component so no component hardcodes a hex value.</description>
+</LightningComponentBundle>

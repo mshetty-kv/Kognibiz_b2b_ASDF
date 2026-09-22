@@ -1,0 +1,16 @@
+<template>
+    <div class="od-promo-wrap">
+        <div class="od-shell">
+            <ul class={rowClass}>
+                <template for:each={tiles} for:item="tile">
+                    <li key={tile.key} class="od-promo">
+                        <span class="od-icon" aria-hidden="true">{tile.glyph}</span>
+                        <h3 class="od-promo-title">{tile.title}</h3>
+                        <p class="od-promo-body">{tile.body}</p>
+                        <a href={tile.url} class="od-link od-focusable">{tile.cta}</a>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,29 @@
+<template>
+    <div class="od-deals-wrap">
+        <div class="od-shell">
+            <template if:true={hasDeals}>
+                <ul class="od-deals">
+                    <template for:each={deals} for:item="deal">
+                        <li key={deal.key} class="od-deal">
+                            <h2 class="od-deal-title">{deal.name}</h2>
+                            <div class="od-deal-grid">
+                                <template for:each={deal.thumbs} for:item="t">
+                                    <a key={t.key} href={t.url} class="od-deal-thumb od-focusable">
+                                        <img src={t.image} alt={t.alt} loading="lazy" />
+                                    </a>
+                                </template>
+                            </div>
+                            <template if:true={deal.hasBadge}>
+                                <span class="od-deal-badge">{deal.badge}</span>
+                            </template>
+                            <a href={deal.url} class="od-link od-focusable">Shop {deal.name}</a>
+                        </li>
+                    </template>
+                </ul>
+            </template>
+            <template if:true={error}>
+                <div class="od-card" role="alert">{error}</div>
+            </template>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Office Depot Hero Carousel</masterLabel>
+    <description>Rotating full-bleed hero carousel with prev/next arrows, slide dots, auto-advance and a pause control. Built custom because the standard palette only offers a static single banner.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="autoAdvance" type="Boolean" default="true" label="Auto-advance slides"/>
+            <property name="intervalSeconds" type="Integer" default="6" label="Seconds per slide" min="2" max="30"/>
+            <property name="carouselHeight" type="Integer" default="340" label="Height in pixels" min="180" max="700"/>
+            <property name="slide1Eyebrow" type="String" label="Slide 1 eyebrow"/>
+            <property name="slide1Title" type="String" label="Slide 1 title"/>
+            <property name="slide1Body" type="String" label="Slide 1 body"/>
+            <property name="slide1CtaLabel" type="String" label="Slide 1 button label"/>
+            <property name="slide1CtaUrl" type="String" label="Slide 1 button URL"/>
+            <property name="slide1Theme" type="String" label="Slide 1 theme" datasource="navy,teal,amber,plum"/>
+            <property name="slide2Eyebrow" type="String" label="Slide 2 eyebrow"/>
+            <property name="slide2Title" type="String" label="Slide 2 title"/>
+            <property name="slide2Body" type="String" label="Slide 2 body"/>
+            <property name="slide2CtaLabel" type="String" label="Slide 2 button label"/>
+            <property name="slide2CtaUrl" type="String" label="Slide 2 button URL"/>
+            <property name="slide2Theme" type="String" label="Slide 2 theme" datasource="navy,teal,amber,plum"/>
+            <property name="slide3Eyebrow" type="String" label="Slide 3 eyebrow"/>
+            <property name="slide3Title" type="String" label="Slide 3 title"/>
+            <property name="slide3Body" type="String" label="Slide 3 body"/>
+            <property name="slide3CtaLabel" type="String" label="Slide 3 button label"/>
+            <property name="slide3CtaUrl" type="String" label="Slide 3 button URL"/>
+            <property name="slide3Theme" type="String" label="Slide 3 theme" datasource="navy,teal,amber,plum"/>
+            <property name="slide4Eyebrow" type="String" label="Slide 4 eyebrow"/>
+            <property name="slide4Title" type="String" label="Slide 4 title"/>
+            <property name="slide4Body" type="String" label="Slide 4 body"/>
+            <property name="slide4CtaLabel" type="String" label="Slide 4 button label"/>
+            <property name="slide4CtaUrl" type="String" label="Slide 4 button URL"/>
+            <property name="slide4Theme" type="String" label="Slide 4 theme" datasource="navy,teal,amber,plum"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,81 @@
+<template>
+    <div class="od-rails">
+        <template if:true={error}>
+            <div class="od-shell od-card od-error" role="alert">
+                <p>We couldn&rsquo;t load products right now.</p>
+                <p class="od-error-detail">{error}</p>
+            </div>
+        </template>
+
+        <template if:true={isEmpty}>
+            <div class="od-shell od-card">
+                <p>No products are available in your catalog yet.</p>
+            </div>
+        </template>
+
+        <template for:each={rails} for:item="rail">
+            <section key={rail.key} class="od-shell" aria-label={rail.regionLabel}>
+                <div class="od-card od-rail-card">
+                    <div class="od-rail-head">
+                        <h2 class="od-h2">{rail.heading}</h2>
+                        <template if:true={rail.hasDealBadge}>
+                            <span class="od-deal-badge">{rail.dealBadge}</span>
+                        </template>
+                    </div>
+
+                    <div class="od-rail-body">
+                        <button type="button" class="od-scroll od-scroll--left od-focusable"
+                                data-rail={rail.key} onclick={handleScrollLeft}
+                                aria-label="Scroll left">
+                            <span aria-hidden="true">&#8249;</span>
+                        </button>
+
+                        <ul class="od-scroller" data-scroller={rail.key} tabindex="0">
+                            <template for:each={rail.products} for:item="p">
+                                <li key={p.key} class="od-tile">
+                                    <a href={p.productUrl} class="od-tile-link od-focusable">
+                                        <div class="od-thumb">
+                                            <img src={p.image} alt={p.imageAlt} loading="lazy" />
+                                        </div>
+                                        <p class="od-name">{p.name}</p>
+                                    </a>
+
+                                    <template if:true={p.showRating}>
+                                        <div class="od-rating">
+                                            <span class="od-stars" aria-hidden="true">{p.stars}</span>
+                                            <span class="od-visually-hidden">{p.ratingText}</span>
+                                            <span class="od-reviews">{p.reviewLabel}</span>
+                                        </div>
+                                    </template>
+
+                                    <div class="od-price-row">
+                                        <span class="od-price">{p.priceLabel}</span>
+                                        <template if:true={p.showList}>
+                                            <span class="od-list">{p.listLabel}</span>
+                                            <span class="od-pct">{p.percentLabel}</span>
+                                        </template>
+                                    </div>
+
+                                    <template if:true={p.showSavings}>
+                                        <span class="od-savings">{p.savingsLabel}</span>
+                                    </template>
+                                </li>
+                            </template>
+                        </ul>
+
+                        <button type="button" class="od-scroll od-scroll--right od-focusable"
+                                data-rail={rail.key} onclick={handleScrollRight}
+                                aria-label="Scroll right">
+                            <span aria-hidden="true">&#8250;</span>
+                        </button>
+                    </div>
+
+                    <div class="od-rail-foot">
+                        <a href={rail.categoryUrl} class="od-link">See all in {rail.categoryName}</a>
+                        <span class="od-page" aria-live="polite">{rail.pageLabel}</span>
+                    </div>
+                </div>
+            </section>
+        </template>
+    </div>
+</template>

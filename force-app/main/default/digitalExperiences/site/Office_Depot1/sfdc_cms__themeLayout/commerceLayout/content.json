@@ -1,0 +1,116 @@
+{
+  "type": "sfdc_cms__themeLayout",
+  "title": "Commerce Layout",
+  "contentBody": {
+    "component": {
+      "attributes": {},
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "brandName": "Office Depot",
+                "brandSuffix": "Business",
+                "deliverToCity": "San Francisco 94105",
+                "dxpStyle": {},
+                "languageLabel": "EN",
+                "searchPlaceholder": "Search Office Depot Business",
+                "searchUrl": "/global-search",
+                "showLanguage": true,
+                "orderListUrl": "/OrderSummary/OrderSummary/Default"
+              },
+              "definition": "c:officeDepotUtilityHeader",
+              "id": "0b000000-0000-4000-9000-000000000001",
+              "type": "component"
+            },
+            {
+              "attributes": {
+                "allLabel": "All",
+                "categoryUrl": "/category/0ZGgL000000nFXNWA2",
+                "dxpStyle": {},
+                "link1Label": "Buy Again",
+                "link1Url": "/OrderSummary/OrderSummary/Default",
+                "link2Label": "Today's Deals",
+                "link2Url": "/category/0ZGgL000000nFXNWA2",
+                "link3Label": "Business Deals",
+                "link3Url": "/category/0ZGgL000000nFXNWA2",
+                "link4Label": "Quantity Discounts",
+                "link4Url": "/category/0ZGgL000000nFXNWA2",
+                "link5Label": "Savings Hub",
+                "link5Url": "/category/0ZGgL000000nFXNWA2",
+                "link6Label": "Add team members",
+                "link6Url": "/myprofile",
+                "listsLabel": "Lists",
+                "orderListUrl": "/OrderSummary/OrderSummary/Default"
+              },
+              "definition": "c:officeDepotNavBar",
+              "id": "0b000000-0000-4000-9000-000000000002",
+              "type": "component"
+            }
+          ],
+          "id": "72476621-8d3b-4b33-9106-5cd4e9473b8b",
+          "name": "header",
+          "title": "Header",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "acceptButtonText": "Accept",
+                "dxpStyle": {},
+                "excludedPages": "Privacy_Policy\nTerms_And_Conditions",
+                "rejectButtonText": "Reject"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "dxpStyle": {},
+                        "imageInfos": "",
+                        "richTextValue": "<p style=\"text-align: center;\"><strong style=\"font-size: 18px;\">Cookie Consent</strong></p><p style=\"text-align: center;\"><br></p><p style=\"text-align: center;\">Your cookie consent policy lives <a href=\"{!Site.basePath}/privacy-policy\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>here</strong></a>. Replace the place holder property with your own.</p>"
+                      },
+                      "definition": "community_builder:richTextEditor",
+                      "id": "d2451e07-7b3a-4c0e-8a61-3b76be945c76",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "35e95edc-38ed-45b6-8f49-f2f3fe629688",
+                  "name": "content",
+                  "title": "Content",
+                  "type": "region"
+                }
+              ],
+              "definition": "commerce_builder:consentBlanket",
+              "id": "85816b32-9a83-4508-854e-3be0ded4224c",
+              "type": "component"
+            },
+            {
+              "attributes": {
+                "brandName": "Office Depot",
+                "dxpStyle": {},
+                "legalLine": "Office Depot B2B Commerce demo storefront. Built for ASDF capability validation.",
+                "showLocale": true,
+                "catalogUrl": "/category/0ZGgL000000nFXNWA2",
+                "ordersUrl": "/OrderSummary/OrderSummary/Default",
+                "accountUrl": "/myprofile"
+              },
+              "definition": "c:officeDepotMegaFooter",
+              "id": "0b000000-0000-4000-9000-000000000003",
+              "type": "component"
+            }
+          ],
+          "id": "04b9e874-d28d-4918-9754-9c55f3507ba6",
+          "name": "footer",
+          "title": "Footer",
+          "type": "region"
+        }
+      ],
+      "definition": "commerce:layoutSite",
+      "id": "ce057ede-9dfa-48c9-bb25-5e59c83dae4b",
+      "type": "component"
+    }
+  },
+  "urlName": "commerce-layout"
+}

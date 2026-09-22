@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <isExposed>false</isExposed>
+    <masterLabel>Office Depot Imagery</masterLabel>
+    <description>Service module returning generated SVG product illustrations as data URIs. No third-party imagery.</description>
+</LightningComponentBundle>

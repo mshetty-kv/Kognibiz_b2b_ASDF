@@ -1,0 +1,65 @@
+@import 'c/officeDepotTokens';
+
+.od-deals-wrap { background: var(--od-bg-band); padding: 0 0 18px; }
+
+.od-deals {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--od-gap);
+}
+
+.od-deal {
+    background: var(--od-bg-card);
+    border-radius: var(--od-radius);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.od-deal-title {
+    margin: 0;
+    font-size: var(--od-fs-xl);
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--od-text);
+}
+
+.od-deal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+    flex: 1;
+}
+
+.od-deal-thumb {
+    display: block;
+    border: 1px solid var(--od-border);
+    border-radius: var(--od-radius-sm);
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    background: #fff;
+}
+
+.od-deal-thumb img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+.od-deal-badge {
+    align-self: flex-start;
+    background: var(--od-deal-red);
+    color: #fff;
+    font-size: var(--od-fs-sm);
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: var(--od-radius-sm);
+}
+
+@media (max-width: 900px) {
+    .od-deals { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 520px) {
+    .od-deals { grid-template-columns: 1fr; }
+}

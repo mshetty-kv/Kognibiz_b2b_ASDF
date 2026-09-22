@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Office Depot Category Deals</masterLabel>
+    <description>Category deal tiles with a 2x2 product grid and a real maximum-discount badge computed from pricebook data.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="heading" type="String" default="Deals by category" label="Section heading"/>
+            <property name="maxCategories" type="Integer" default="4" label="Number of category tiles" min="1" max="12"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

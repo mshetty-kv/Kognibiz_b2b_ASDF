@@ -1,0 +1,27 @@
+# List files or directories below to ignore them when running force:source:push, force:source:pull, and force:source:status
+# More information: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_exclude_source.htm
+#
+
+package.xml
+
+# LWC configuration files
+**/jsconfig.json
+**/.eslintrc.json
+
+# LWC Jest
+**/__tests__/**
+
+node_modules/
+
+# Target-org-owned or namespace-managed metadata is not portable from the scratch org.
+force-app/main/default/navigationMenus/Default_Get_Help_Menu.navigationMenu-meta.xml
+force-app/main/default/navigationMenus/Default_My_Account_Menu.navigationMenu-meta.xml
+force-app/main/default/navigationMenus/Default_Our_Company_Menu.navigationMenu-meta.xml
+force-app/main/default/navigationMenus/Default_Social_Media_Menu.navigationMenu-meta.xml
+force-app/main/default/navigationMenus/Default_User_Profile_Menu.navigationMenu-meta.xml
+force-app/main/default/permissionsetgroups/force__Commerce_Buyer.permissionsetgroup-meta.xml
+force-app/main/default/permissionsetgroups/force__SalesWorkspacePSG.permissionsetgroup-meta.xml
+force-app/main/default/permissionsetgroups/force__ScaleCenterUsers.permissionsetgroup-meta.xml
+force-app/main/default/roles/OfficeDepotStoreOwner.role-meta.xml
+force-app/main/default/profiles/Admin.profile-meta.xml
+force-app/main/default/appMenus/AppSwitcher.appMenu-meta.xml

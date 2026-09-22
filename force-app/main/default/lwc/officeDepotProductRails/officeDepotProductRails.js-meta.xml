@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Office Depot Product Rails</masterLabel>
+    <description>Horizontal "Bestsellers in Category" rails driven by the Office Depot catalog, with dual pricing, percent-off and savings chips.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="headingPrefix" type="String" default="Bestsellers in" label="Rail heading prefix"/>
+            <property name="maxCategories" type="Integer" default="6" label="Number of category rails" min="1" max="12"/>
+            <property name="productsPerRail" type="Integer" default="8" label="Products per rail" min="1" max="24"/>
+            <property name="showRatings" type="Boolean" default="true" label="Show star ratings (synthetic)"/>
+            <property name="showSavingsChip" type="Boolean" default="true" label="Show savings chip"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

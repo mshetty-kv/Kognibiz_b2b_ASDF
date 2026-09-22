@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Office Depot Promo Tiles</masterLabel>
+    <description>Four-across promo tile row with icon, title, body and call to action. Optionally overlaps the hero.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="overlapHero" type="Boolean" default="true" label="Overlap the hero above"/>
+            <property name="tile1Icon" type="String" label="Tile 1 icon" datasource="gift,receipt,box,chart,truck,tag"/>
+            <property name="tile1Title" type="String" label="Tile 1 title"/>
+            <property name="tile1Body" type="String" label="Tile 1 body"/>
+            <property name="tile1CtaLabel" type="String" label="Tile 1 link label"/>
+            <property name="tile1CtaUrl" type="String" label="Tile 1 link URL"/>
+            <property name="tile2Icon" type="String" label="Tile 2 icon" datasource="gift,receipt,box,chart,truck,tag"/>
+            <property name="tile2Title" type="String" label="Tile 2 title"/>
+            <property name="tile2Body" type="String" label="Tile 2 body"/>
+            <property name="tile2CtaLabel" type="String" label="Tile 2 link label"/>
+            <property name="tile2CtaUrl" type="String" label="Tile 2 link URL"/>
+            <property name="tile3Icon" type="String" label="Tile 3 icon" datasource="gift,receipt,box,chart,truck,tag"/>
+            <property name="tile3Title" type="String" label="Tile 3 title"/>
+            <property name="tile3Body" type="String" label="Tile 3 body"/>
+            <property name="tile3CtaLabel" type="String" label="Tile 3 link label"/>
+            <property name="tile3CtaUrl" type="String" label="Tile 3 link URL"/>
+            <property name="tile4Icon" type="String" label="Tile 4 icon" datasource="gift,receipt,box,chart,truck,tag"/>
+            <property name="tile4Title" type="String" label="Tile 4 title"/>
+            <property name="tile4Body" type="String" label="Tile 4 body"/>
+            <property name="tile4CtaLabel" type="String" label="Tile 4 link label"/>
+            <property name="tile4CtaUrl" type="String" label="Tile 4 link URL"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

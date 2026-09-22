@@ -1,0 +1,5 @@
+- [ASDF B2B validation PoC](project_asdf_b2b_validation.md) — the storefront is the instrument; the honest 1-5 assessment is the deliverable
+- [B2B Commerce platform traps](project_b2b_commerce_platform_traps.md) — Product2.Type kills the search index, shipping needs the ShippingConfigurationSet chain, read the whole errors[] array
+- [Office Depot working agreement](feedback_office_depot_working_agreement.md) — all code under force-app, no test files, no wrapper directory, approval before org writes
+- [Office Depot orgs](reference_office_depot_orgs.md) — vscodeOrg is now the active target (additive writes only); scratch org abandoned; sf CLI quirks on this workstation
+- [B2B storefront UI traps](project_b2b_storefront_ui_traps.md) — buyers can't SOQL the catalogue, searchProducts blocks cacheable Apex, the CMS image upload recipe, base-path rules
