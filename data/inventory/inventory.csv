@@ -1,0 +1,72 @@
+ProductName,SKU,LocationIdentifier,OnHand,SafetyStock
+Laptop Carry Case,ADDON-CASE-01,Testing_Warehouse,1000,0
+Laptop bag,BAG121,Testing_Warehouse,1000,0
+CNC Milling Machine Pro Series  CNC Milling Machine Pro Series  CNC Milling Machine Pro Series CNC Milling Machine Pro Series,CNS12111,Testing_Warehouse,1000,0
+Dell Inspiron 15 Thin Laptop Intel Core i5 16GB RAM 512GB SSD Windows 11 Home,DEL121,Testing_Warehouse,1000,0
+Dell laptop - 1 TB SSD,DEL121-1TB,Testing_Warehouse,1000,0
+Dell laptop - 512 GB SSD,DEL121-512GB,Testing_Warehouse,1000,0
+Dell laptop,DEL121-OLD,Testing_Warehouse,1000,0
+Dress,DRESS21,Testing_Warehouse,1000,0
+Dress1,DRESS22,Testing_Warehouse,1000,0
+Dress,DRESS23,Testing_Warehouse,1000,0
+Drilling machine,DRILL1211,Testing_Warehouse,1000,0
+Surface Grinding Machine,GRIND1211,Testing_Warehouse,1000,0
+Industrial Angle Grinder 7 Inch,GRIND71211,Testing_Warehouse,1000,0
+HP Pavilion Gaming 15,HP-PAV-G15-001,Testing_Warehouse,1000,0
+"HP 952XL Black/952 Cyan; Magenta; Yellow High-Yield Ink Cartridges, Pack Of 4, N9K28AN",HP121,Testing_Warehouse,1000,0
+HP Laptop,HP1212,Testing_Warehouse,1000,0
+Hydraulic Press machine,HY1211,Testing_Warehouse,1000,0
+Industrial Air Compressor 10HP,INDUS1211,Testing_Warehouse,1000,0
+Keyboard,KEY121,Testing_Warehouse,1000,0
+Cordless Impact Wrench Kit,KIT1211,Testing_Warehouse,1000,0
+Lenavo laptop,LANAVO121,Testing_Warehouse,1000,0
+Mouse,MON121,Testing_Warehouse,1000,0
+Deskora ErgoMesh Office Chair with Adjustable Lumbar Support and 3D Armrests,PDPS-CHR01,Testing_Warehouse,1000,0
+"Arcline USB-C Docking Station, 11-in-1, Dual 4K HDMI, 100W Pass-Through",PDPS-DOCK01,Testing_Warehouse,1000,0
+"Forgewell 20V Cordless Drill Driver Kit with 2 Batteries, Charger and Case",PDPS-DRL20,Testing_Warehouse,1000,0
+"Printhaus Imaging Drum Unit, 30,000 Pages",PDPS-DRM01,Testing_Warehouse,1000,0
+"Halecrest Workplace First Aid Kit, 50-Person, Wall-Mountable",PDPS-FAK50,Testing_Warehouse,1000,0
+"Forgewell Cut-Resistant Work Gloves, Level A4, Nitrile Coated, 12 Pairs",PDPS-GLV12,Testing_Warehouse,1000,0
+"Printhaus Tri-Colour Inkjet Cartridge, Standard Yield, 300 Pages",PDPS-INK-CMY,Testing_Warehouse,1000,0
+"Arcline Wireless Keyboard and Mouse Combo, Quiet Keys, 2.4 GHz and Bluetooth",PDPS-KBM01,Testing_Warehouse,1000,0
+"Arcline ProBook 14 Business Laptop, Intel Core i7-1355U, 16GB RAM, 14"" FHD+, Windows 11 Pro",PDPS-LAP14,Testing_Warehouse,1000,0
+Arcline ProBook 14 - 1 TB SSD,PDPS-LAP14-1TB,Testing_Warehouse,1000,0
+Arcline ProBook 14 - 512 GB SSD,PDPS-LAP14-512,Testing_Warehouse,1000,0
+"Forgewell True-RMS Digital Multimeter, CAT III 600V, Auto-Ranging",PDPS-MMT01,Testing_Warehouse,1000,0
+"Arcline 27"" QHD IPS Business Monitor with USB-C 65W and Height-Adjustable Stand",PDPS-MON27,Testing_Warehouse,1000,0
+"Halecrest Nitrile Examination Gloves, Powder-Free, Box of 100",PDPS-NGL100,Testing_Warehouse,1000,0
+"Deskora Desk Organizer Set, 5 Pieces, Steel Mesh",PDPS-ORG01,Testing_Warehouse,1000,0
+"Deskora Ballpoint Pens, Medium Point 1.0 mm, Blue Ink, Box of 50",PDPS-PEN50,Testing_Warehouse,1000,0
+"Deskora A4 Copy Paper, 80 gsm, Bright White, Case of 5 Reams (2,500 Sheets)",PDPS-PPR01,Testing_Warehouse,1000,0
+"Halecrest Hand Sanitizer Gel, 70% Alcohol, 5 L Refill",PDPS-SAN5L,Testing_Warehouse,1000,0
+"Arcline Workstation Set: 27"" QHD Monitor, Wireless Keyboard & Mouse, USB-C Dock",PDPS-SET-DESK,Testing_Warehouse,1000,0
+"Office Desk Essentials Set: A4 Copy Paper, Stapler, Ballpoint Pens & Desk Organizer",PDPS-SET-OFFICE,Testing_Warehouse,1000,0
+"Printer Supplies Set: High-Yield Black Toner, Tri-Colour Ink & Imaging Drum",PDPS-SET-PRINT,Testing_Warehouse,1000,0
+"Workplace Safety Set: First Aid Kit, Nitrile Gloves, Hand Sanitizer & Cut-Resistant Gloves",PDPS-SET-SAFE,Testing_Warehouse,1000,0
+"Deskora Heavy-Duty Stapler, 100-Sheet Capacity, with 1,000 Staples",PDPS-STP01,Testing_Warehouse,1000,0
+"Printhaus Laser Toner Multipack, CMYK, 4 Cartridges",PDPS-TNR-4PK,Testing_Warehouse,1000,0
+"Printhaus High-Yield Black Laser Toner Cartridge, 9,000 Pages",PDPS-TNR-BK,Testing_Warehouse,1000,0
+Anti-Diarrheal Tablets,PH-ADIA-10,Testing_Warehouse,1000,0
+Antacid Chewable Tablets,PH-ANTAC-20,Testing_Warehouse,1000,0
+Antihistamine Allergy Tablets,PH-ANTIH-10,Testing_Warehouse,1000,0
+Antiseptic Liquid 100ml,PH-ANTIS-100,Testing_Warehouse,1000,0
+Aspirin 325mg Tablets,PH-ASP-325,Testing_Warehouse,1000,0
+Adhesive Bandages (50 pack),PH-BAND-50,Testing_Warehouse,1000,0
+Cough Syrup 100ml,PH-COUGH-100,Testing_Warehouse,1000,0
+Nasal Decongestant Tablets,PH-DECON-10,Testing_Warehouse,1000,0
+Glucometer Test Strips (50),PH-GLUCO-50,Testing_Warehouse,1000,0
+Ibuprofen 400mg Tablets,PH-IBU-400,Testing_Warehouse,1000,0
+Throat Lozenges (24 pack),PH-LOZ-24,Testing_Warehouse,1000,0
+Surgical Face Masks (50 pack),PH-MASK-50,Testing_Warehouse,1000,0
+Daily Multivitamin (60 tablets),PH-MULTI-60,Testing_Warehouse,1000,0
+Saline Nasal Spray 15ml,PH-NASAL-15,Testing_Warehouse,1000,0
+ORS Rehydration Sachets,PH-ORS-10,Testing_Warehouse,1000,0
+Paracetamol 500mg Tablets,PH-PARA-500,Testing_Warehouse,1000,0
+Pain Relief Gel 30g,PH-PGEL-30,Testing_Warehouse,1000,0
+Digital Thermometer,PH-THERMO-1,Testing_Warehouse,1000,0
+Vitamin C 500mg Tablets,PH-VITC-500,Testing_Warehouse,1000,0
+Vitamin D3 Softgels (60),PH-VITD-60,Testing_Warehouse,1000,0
+1-Year Extended Warranty,PLAN-WARR-1YR,Testing_Warehouse,1000,0
+Testing Product,TEST1211,Testing_Warehouse,1000,0
+Vaccum cleaner,VACUM1211,Testing_Warehouse,1000,0
+Welding machine,WELD1211,Testing_Warehouse,1000,0
