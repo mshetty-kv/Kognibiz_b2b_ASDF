@@ -1,0 +1,69 @@
+<template>
+    <div class="address-book">
+        <div class="sr-only" aria-live="polite" role="status">{statusMessage}</div>
+
+        <template lwc:if={errorMessage}>
+            <div class="page-error" role="alert">{errorMessage}</div>
+        </template>
+
+        <template lwc:if={isFormView}>
+            <c-amazon-address-form
+                address={editingAddress}
+                address-type={newAddressType}
+                countries={countries}
+                default-country-code={defaultCountryCode}
+                saving={busy}
+                onsave={handleSave}
+                oncancel={handleCancel}
+            ></c-amazon-address-form>
+        </template>
+
+        <template lwc:else>
+            <h1 class="page-title" tabindex="-1">{labels.pageTitle}</h1>
+
+            <template lwc:if={loading}>
+                <div class="spinner-holder">
+                    <lightning-spinner alternative-text={labels.loading} size="medium"></lightning-spinner>
+                </div>
+            </template>
+
+            <template lwc:else>
+                <template for:each={sections} for:item="section">
+                    <section key={section.type} class="address-section" aria-labelledby={section.headingId}>
+                        <h2 class="section-title" id={section.headingId}>{section.heading}</h2>
+                        <ul class="card-grid" role="list">
+                            <li class="grid-item">
+                                <button
+                                    type="button"
+                                    class="add-card"
+                                    data-type={section.type}
+                                    aria-label={section.addAssistive}
+                                    onclick={handleAdd}
+                                >
+                                    <lightning-icon
+                                        class="add-icon"
+                                        icon-name="utility:add"
+                                        size="large"
+                                        alternative-text=""
+                                    ></lightning-icon>
+                                    <span class="add-text">{labels.addAddress}</span>
+                                </button>
+                            </li>
+                            <template for:each={section.addresses} for:item="address">
+                                <li class="grid-item" key={address.addressId}>
+                                    <c-amazon-address-card
+                                        address={address}
+                                        busy={busy}
+                                        data-id={address.addressId}
+                                        onedit={handleEdit}
+                                        onremove={handleRemove}
+                                    ></c-amazon-address-card>
+                                </li>
+                            </template>
+                        </ul>
+                    </section>
+                </template>
+            </template>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,103 @@
+@import "c/officeDepotTokens";
+
+:host {
+    display: block;
+    height: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 266px;
+    border: 1px solid var(--od-border);
+    border-radius: var(--od-radius);
+    background: var(--od-bg-card);
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--od-gap-xs);
+    min-height: 40px;
+    padding: 0 18px;
+    border-bottom: 1px solid var(--od-border);
+    font-size: var(--od-fs-sm);
+    color: var(--od-text-secondary);
+}
+
+.default-type {
+    font-weight: 700;
+    color: var(--od-text);
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 14px 18px 0;
+    font-size: var(--od-fs-md);
+    line-height: 1.43;
+    color: var(--od-text);
+}
+
+.card-body p {
+    margin: 0;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.card-footer {
+    padding: 14px 18px 18px;
+    font-size: var(--od-fs-md);
+}
+
+.confirm {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--od-gap-xs);
+}
+
+.confirm-text {
+    flex-basis: 100%;
+    margin: 0 0 var(--od-gap-xs);
+    font-weight: 700;
+}
+
+.link-button {
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    color: var(--od-link);
+    cursor: pointer;
+}
+
+.link-button:hover {
+    color: var(--od-link-hover);
+    text-decoration: underline;
+}
+
+.link-button:focus-visible {
+    outline: none;
+    box-shadow: var(--od-focus-ring);
+    border-radius: var(--od-radius-sm);
+}
+
+.link-button:disabled {
+    cursor: wait;
+    opacity: 0.6;
+}
+
+.danger {
+    color: var(--od-deal-red);
+}
+
+.divider {
+    margin: 0 var(--od-gap-sm);
+    color: var(--od-border);
+}

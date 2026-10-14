@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Amazon Address Book</masterLabel>
+    <description>Amazon Business-style My Account address management: Billing and Shipping sections, dashed add cards, add/edit/remove and defaults on ContactPointAddress (B2B-ADDR-001).</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="defaultCountryCode" type="String" default="US" label="Default country code (ISO) for new addresses"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

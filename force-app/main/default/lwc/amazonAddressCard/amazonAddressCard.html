@@ -1,0 +1,44 @@
+<template>
+    <article class="card" aria-label={address.name}>
+        <template lwc:if={address.isDefault}>
+            <header class="card-header">
+                <span class="default-text">{labels.defaultPrefix}</span>
+                <span class="default-type">{typeLabel}</span>
+            </header>
+        </template>
+        <div class="card-body">
+            <p class="name">{address.name}</p>
+            <template for:each={streetLines} for:item="line">
+                <p class="line" key={line.key}>{line.text}</p>
+            </template>
+            <p class="line">{cityLine}</p>
+            <p class="line">{address.country}</p>
+            <template lwc:if={address.phoneNumber}>
+                <p class="line"><span>{labels.phonePrefix}</span> <span>{address.phoneNumber}</span></p>
+            </template>
+        </div>
+        <footer class="card-footer">
+            <template lwc:if={confirming}>
+                <div class="confirm" role="group" aria-label={labels.removeConfirm}>
+                    <p class="confirm-text">{labels.removeConfirm}</p>
+                    <button type="button" class="link-button danger" onclick={handleConfirmRemove} disabled={busy}>
+                        {labels.confirmYes}
+                    </button>
+                    <span class="divider" aria-hidden="true">|</span>
+                    <button type="button" class="link-button cancel-remove" onclick={handleCancelRemove} disabled={busy}>
+                        {labels.cancel}
+                    </button>
+                </div>
+            </template>
+            <template lwc:else>
+                <button type="button" class="link-button" onclick={handleEdit} aria-label={editAssistive}>
+                    {labels.edit}
+                </button>
+                <span class="divider" aria-hidden="true">|</span>
+                <button type="button" class="link-button remove" onclick={handleRemove} aria-label={removeAssistive}>
+                    {labels.remove}
+                </button>
+            </template>
+        </footer>
+    </article>
+</template>

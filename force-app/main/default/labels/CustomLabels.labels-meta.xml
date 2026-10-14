@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AmzAddr_PageTitle</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr PageTitle</shortDescription>
+        <value>Your Addresses</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_BillingHeading</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr BillingHeading</shortDescription>
+        <value>Billing Addresses</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_ShippingHeading</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr ShippingHeading</shortDescription>
+        <value>Shipping Addresses</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_AddAddress</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr AddAddress</shortDescription>
+        <value>Add address</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_AddBillingAssistive</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr AddBillingAssistive</shortDescription>
+        <value>Add a billing address</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_AddShippingAssistive</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr AddShippingAssistive</shortDescription>
+        <value>Add a shipping address</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_DefaultPrefix</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr DefaultPrefix</shortDescription>
+        <value>Default:</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_Edit</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_Remove</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr Remove</shortDescription>
+        <value>Remove</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_EditAssistive</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr EditAssistive</shortDescription>
+        <value>Edit address for</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_RemoveAssistive</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr RemoveAssistive</shortDescription>
+        <value>Remove address for</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_RemoveConfirm</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr RemoveConfirm</shortDescription>
+        <value>Remove this address?</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_ConfirmYes</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr ConfirmYes</shortDescription>
+        <value>Yes, remove</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_Cancel</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_PhonePrefix</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr PhonePrefix</shortDescription>
+        <value>Phone number:</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_FormAddTitle</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr FormAddTitle</shortDescription>
+        <value>Add a new address</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_FormEditTitle</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr FormEditTitle</shortDescription>
+        <value>Edit your address</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_Country</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr Country</shortDescription>
+        <value>Country/Region</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_FullName</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr FullName</shortDescription>
+        <value>Full name (First and Last name)</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_Phone</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr Phone</shortDescription>
+        <value>Mobile number</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_PhoneHelp</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr PhoneHelp</shortDescription>
+        <value>May be used to assist delivery</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_PostalCode</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr PostalCode</shortDescription>
+        <value>ZIP / Postal code</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_Street1</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr Street1</shortDescription>
+        <value>Flat, House no., Building, Company, Apartment</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_Street2</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr Street2</shortDescription>
+        <value>Area, Street, Sector, Village</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_City</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr City</shortDescription>
+        <value>Town/City</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_State</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr State</shortDescription>
+        <value>State</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_StatePlaceholder</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr StatePlaceholder</shortDescription>
+        <value>Choose a state</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_AddressType</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr AddressType</shortDescription>
+        <value>Address type</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_Billing</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr Billing</shortDescription>
+        <value>Billing</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_Shipping</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr Shipping</shortDescription>
+        <value>Shipping</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_MakeDefault</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr MakeDefault</shortDescription>
+        <value>Make this my default address</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_SubmitEdit</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr SubmitEdit</shortDescription>
+        <value>Save changes</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_Saved</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr Saved</shortDescription>
+        <value>Your address was saved.</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_Removed</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr Removed</shortDescription>
+        <value>Your address was removed.</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_Loading</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr Loading</shortDescription>
+        <value>Loading addresses</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_ErrorRequired</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr ErrorRequired</shortDescription>
+        <value>Please complete the highlighted fields.</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_ErrorGeneric</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr ErrorGeneric</shortDescription>
+        <value>Something went wrong. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_ErrorNoContext</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr ErrorNoContext</shortDescription>
+        <value>Addresses are available only to signed-in buyers of this store.</value>
+    </labels>
+    <labels>
+        <fullName>AmzAddr_ErrorInvalidRequest</fullName>
+        <categories>AmazonAddressBook</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAddr ErrorInvalidRequest</shortDescription>
+        <value>Please check the address details and try again.</value>
+    </labels>
+</CustomLabels>

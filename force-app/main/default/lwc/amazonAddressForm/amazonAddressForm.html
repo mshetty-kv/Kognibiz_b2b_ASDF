@@ -1,0 +1,117 @@
+<template>
+    <section class="form-shell" aria-labelledby="form-title">
+        <h1 class="form-title" id="form-title" tabindex="-1">{title}</h1>
+        <template lwc:if={showSummaryError}>
+            <div class="form-error" role="alert">{labels.errorRequired}</div>
+        </template>
+        <form class="address-form" novalidate onsubmit={handleSubmit}>
+            <lightning-combobox
+                class="field"
+                name="countryCode"
+                label={labels.country}
+                value={draft.countryCode}
+                options={countryOptions}
+                required
+                onchange={handleCountryChange}
+            ></lightning-combobox>
+            <lightning-input
+                class="field"
+                name="name"
+                label={labels.fullName}
+                value={draft.name}
+                max-length="255"
+                autocomplete="name"
+                required
+                onchange={handleFieldChange}
+            ></lightning-input>
+            <lightning-input
+                class="field"
+                type="tel"
+                name="phoneNumber"
+                label={labels.phone}
+                field-level-help={labels.phoneHelp}
+                value={draft.phoneNumber}
+                max-length="40"
+                autocomplete="tel"
+                onchange={handleFieldChange}
+            ></lightning-input>
+            <lightning-input
+                class="field"
+                name="postalCode"
+                label={labels.postalCode}
+                value={draft.postalCode}
+                max-length="20"
+                autocomplete="postal-code"
+                required
+                onchange={handleFieldChange}
+            ></lightning-input>
+            <lightning-input
+                class="field"
+                name="street1"
+                label={labels.street1}
+                value={draft.street1}
+                max-length="255"
+                autocomplete="address-line1"
+                required
+                onchange={handleFieldChange}
+            ></lightning-input>
+            <lightning-input
+                class="field"
+                name="street2"
+                label={labels.street2}
+                value={draft.street2}
+                max-length="255"
+                autocomplete="address-line2"
+                onchange={handleFieldChange}
+            ></lightning-input>
+            <div class="field-row">
+                <lightning-input
+                    class="field half"
+                    name="city"
+                    label={labels.city}
+                    value={draft.city}
+                    max-length="40"
+                    autocomplete="address-level2"
+                    required
+                    onchange={handleFieldChange}
+                ></lightning-input>
+                <template lwc:if={hasStates}>
+                    <lightning-combobox
+                        class="field half"
+                        name="regionCode"
+                        label={labels.state}
+                        placeholder={labels.statePlaceholder}
+                        value={draft.regionCode}
+                        options={stateOptions}
+                        required
+                        onchange={handleFieldChange}
+                    ></lightning-combobox>
+                </template>
+            </div>
+            <lightning-radio-group
+                class="field"
+                name="addressType"
+                label={labels.addressType}
+                options={typeOptions}
+                value={draft.addressType}
+                type="radio"
+                required
+                onchange={handleFieldChange}
+            ></lightning-radio-group>
+            <lightning-input
+                class="field"
+                type="checkbox"
+                name="isDefault"
+                label={labels.makeDefault}
+                checked={draft.isDefault}
+                onchange={handleDefaultChange}
+            ></lightning-input>
+            <div class="actions">
+                <button type="submit" class="primary-button" disabled={saving}>{submitLabel}</button>
+                <button type="button" class="link-button" onclick={handleCancel} disabled={saving}>
+                    {labels.cancel}
+                </button>
+            </div>
+        </form>
+    </section>
+</template>
