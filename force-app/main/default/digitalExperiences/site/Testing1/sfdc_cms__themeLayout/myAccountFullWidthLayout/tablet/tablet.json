@@ -1,0 +1,23 @@
+{
+  "type": "sfdc_cms__themeLayout",
+  "title": "My Account Full Width Layout",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "attributes": {
+            "flexAlignment": "flex-end"
+          },
+          "id": "3a4fcbdc-6ee1-4e62-944f-2c0f1c3b86ca"
+        },
+        {
+          "attributes": {
+            "pickerButtonAlignment": "right"
+          },
+          "id": "013e3ce9-d882-42fe-bfec-bc2ea002cc23"
+        }
+      ]
+    }
+  },
+  "urlName": "my-account-full-width-layout"
+}

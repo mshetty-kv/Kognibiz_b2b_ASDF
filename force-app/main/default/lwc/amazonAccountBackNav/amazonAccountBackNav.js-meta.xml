@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Amazon Account Back Navigation</masterLabel>
+    <description>"Your Account > page" breadcrumb and "Back to Your Account" pill for account sub-pages (FS-001 phase 2).</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="targetPage" type="String" default="Your_Account__c" label="Dashboard page (route API name, /path, or object:ApiName)"/>
+            <property name="currentPage" type="String" default="profile" datasource="profile,orders,quotes,lists,purchaseOrders,addresses,department,contact,orderDetail" label="Current page (breadcrumb title from Custom Labels)"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,12 @@
+{
+  "type": "sfdc_cms__route",
+  "title": "Your Account",
+  "contentBody": {
+    "activeViewId": "Your_Account",
+    "configurationTags": [],
+    "pageAccess": "UseParent",
+    "routeType": "custom-your-account",
+    "urlPrefix": "your-account"
+  },
+  "urlName": "your-account"
+}

@@ -1,0 +1,104 @@
+@import "c/officeDepotTokens";
+
+/* Follow the storefront font (Poppins) instead of the token module default. */
+:host {
+    font-family: inherit;
+}
+
+.back-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    font-family: inherit;
+}
+
+.crumbs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: var(--od-fs-md);
+    line-height: 1.4;
+}
+
+.crumb {
+    display: inline-flex;
+    align-items: center;
+}
+
+.crumb .crumb-link,
+.crumb .crumb-link:link,
+.crumb .crumb-link:visited {
+    color: var(--od-link);
+    text-decoration: none;
+}
+
+.crumb .crumb-link:hover {
+    color: var(--od-link-hover);
+    text-decoration: underline;
+}
+
+.crumb-link:focus-visible,
+.back-button:focus-visible {
+    outline: none;
+    box-shadow: var(--od-focus-ring);
+    border-radius: var(--od-radius-sm);
+}
+
+.crumb-separator {
+    margin: 0 6px;
+    color: var(--od-text-secondary);
+}
+
+.crumb-current {
+    color: var(--od-accent-text);
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-sizing: border-box;
+    min-height: 44px;
+    padding: 0 20px;
+    border: 1px solid var(--od-border);
+    border-radius: 22px;
+    background: var(--od-bg-card);
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+    color: var(--od-text);
+    font-family: inherit;
+    font-size: var(--od-fs-md);
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background: var(--od-bg-band);
+    color: var(--od-text);
+    text-decoration: none;
+}
+
+.back-nav .back-button:link,
+.back-nav .back-button:visited,
+.back-nav .back-button:active {
+    color: var(--od-text);
+    text-decoration: none;
+}
+
+.back-button:focus-visible {
+    border-radius: 22px;
+}
+
+.back-chevron {
+    flex: 0 0 auto;
+    color: var(--od-accent-chevron);
+}
+
+@media (max-width: 47.99em) {
+    .back-button {
+        width: 100%;
+    }
+}

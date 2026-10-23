@@ -1,0 +1,157 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Quote Summary List",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "dxpStyle": {
+                  "padding": {
+                    "top": "1.5rem",
+                    "bottom": "0.5rem",
+                    "left": "1rem",
+                    "right": "1rem"
+                  }
+                },
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "1100px",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"d16628e2-f3bb-4724-be5a-bddb3ea3e51d\",\"columns\":[{\"UUID\":\"0fdfa737-a9ad-4cb5-9a7c-05a8f6378e74\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "targetPage": "Your_Account__c",
+                        "currentPage": "quotes"
+                      },
+                      "definition": "c:amazonAccountBackNav",
+                      "id": "b53a48a7-24ac-4c34-95d2-812fe7f84179",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "0fdfa737-a9ad-4cb5-9a7c-05a8f6378e74",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "d16628e2-f3bb-4724-be5a-bddb3ea3e51d",
+              "type": "component"
+            },
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "dxpStyle": {
+                  "padding": {
+                    "bottom": "1rem",
+                    "left": "1rem",
+                    "right": "1rem",
+                    "top": "1rem"
+                  }
+                },
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "1100px",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"63b4c042-9c2b-4ef1-ac4e-61e79159f71d\",\"columns\":[{\"UUID\":\"f1bf38be-382f-4fb0-b176-33a9d797b644\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "allFilterLabel": "Filter: All",
+                        "buttonBackgroundColor": "#0176D3",
+                        "buttonBorderRadius": 15,
+                        "buttonFontSize": 16,
+                        "buttonTextColor": "#FFFFFF",
+                        "cardBackgroundColor": "rgb(243, 244, 245)",
+                        "cardBorderRadius": 20,
+                        "cardGap": 28,
+                        "dxpStyle": {},
+                        "emptyStateMessage": "After you create a quote request, you'll find it here.",
+                        "emptyStateTitle": "No quotes yet",
+                        "errorColor": "#C23934",
+                        "fontFamily": "Poppins",
+                        "imageBorderRadius": 18,
+                        "imageFit": "contain",
+                        "metaFontSize": 16,
+                        "paginationBorderColor": "#444444",
+                        "primaryColor": "rgb(1, 118, 211)",
+                        "primaryTextColor": "#292929",
+                        "quoteNumberFontSize": 20,
+                        "quotesPerPage": 2,
+                        "secondaryTextColor": "#444444",
+                        "sectionTitle": "My Quotes",
+                        "statusFontSize": 18,
+                        "titleColor": "#0176D3",
+                        "titleFontSize": 40,
+                        "viewDetailsLabel": "View Details"
+                      },
+                      "definition": "c:customQuoteList",
+                      "id": "e37fbfca-ba82-4b48-8c25-2a713b623a54",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "f1bf38be-382f-4fb0-b176-33a9d797b644",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "63b4c042-9c2b-4ef1-ac4e-61e79159f71d",
+              "type": "component"
+            }
+          ],
+          "id": "1e8254d5-a77d-4226-a5db-c5a58a78b20e",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "dxpStyle": {},
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "45056618-83dc-41d2-a712-d1ad296a9082",
+              "type": "component"
+            }
+          ],
+          "id": "3d16ff90-34e9-4251-a3d0-cf66a5a04533",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "1feb2a4a-0a8e-4994-9477-a982d8012852",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "MyAccountFullWidth",
+    "viewType": "quote-summary-list"
+  },
+  "urlName": "quote-summary-list"
+}

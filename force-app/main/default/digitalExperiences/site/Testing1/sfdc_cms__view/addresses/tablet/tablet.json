@@ -3,21 +3,19 @@
   "title" : "Address List",
   "contentBody" : {
     "component" : {
-      "children" : [
-        {
-          "attributes" : {
-            "dxpStyle" : {
-              "padding" : {
-                "bottom" : "0.5rem",
-                "left" : "0.75rem",
-                "right" : "0.75rem",
-                "top" : "0.5rem"
-              }
+      "children" : [ {
+        "attributes" : {
+          "dxpStyle" : {
+            "padding" : {
+              "bottom" : "0.5rem",
+              "left" : "0.75rem",
+              "right" : "0.75rem",
+              "top" : "0.5rem"
             }
-          },
-          "id" : "571e53c3-3b4d-4563-a470-50037e5c6671"
-        }
-      ]
+          }
+        },
+        "id" : "571e53c3-3b4d-4563-a470-50037e5c6671"
+      } ]
     }
   },
   "urlName" : "address-list"

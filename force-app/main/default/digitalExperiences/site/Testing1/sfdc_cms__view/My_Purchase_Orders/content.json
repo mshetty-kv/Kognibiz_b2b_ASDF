@@ -1,0 +1,127 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "My Purchase Orders",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "dxpStyle": {
+                  "padding": {
+                    "top": "1.5rem",
+                    "bottom": "0.5rem",
+                    "left": "1rem",
+                    "right": "1rem"
+                  }
+                },
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "1100px",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"5c9f6014-996a-4a6a-9a14-98f611d3fbdd\",\"columns\":[{\"UUID\":\"467a4627-4cb5-4dd9-b18d-ec7916e9033f\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "targetPage": "Your_Account__c",
+                        "currentPage": "purchaseOrders"
+                      },
+                      "definition": "c:amazonAccountBackNav",
+                      "id": "9114a287-e25b-4bdb-8809-e22ae524e886",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "467a4627-4cb5-4dd9-b18d-ec7916e9033f",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "5c9f6014-996a-4a6a-9a14-98f611d3fbdd",
+              "type": "component"
+            },
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "dxpStyle": {},
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "1100px",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"a7a800e8-ffe1-4b39-b0a4-58cefc7b53da\",\"columns\":[{\"UUID\":\"35cf1fc7-d8aa-4e15-9204-24aa9ccb5174\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "dxpStyle": {}
+                      },
+                      "definition": "c:myPurchaseOrdersPage",
+                      "id": "187d2525-3402-4244-a123-7872785c8f56",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "35cf1fc7-d8aa-4e15-9204-24aa9ccb5174",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "a7a800e8-ffe1-4b39-b0a4-58cefc7b53da",
+              "type": "component"
+            }
+          ],
+          "id": "17ede428-e05c-415f-96c5-1c0dc1823464",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "",
+                "dxpStyle": {},
+                "pageTitle": "My Purchase Orders",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "811ea65a-9416-4475-8165-3c4ad420fbbd",
+              "type": "component"
+            }
+          ],
+          "id": "d4987cc8-dc58-484f-a978-123f80ed329e",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "4ebef4ff-de86-49bd-9178-38c19eaac6a1",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "MyAccountFullWidth",
+    "viewType": "custom-my-purchase-orders"
+  },
+  "urlName": "my-purchase-orders"
+}

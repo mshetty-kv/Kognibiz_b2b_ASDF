@@ -1,0 +1,13 @@
+<template>
+    <a class="account-card" href={href} onclick={handleClick} data-key={cardKey}>
+        <span class="card-icon" aria-hidden="true">
+            <lightning-icon icon-name={iconName} size="medium" class="card-icon-glyph"></lightning-icon>
+        </span>
+        <span class="card-text">
+            <span class="card-title">{cardTitle}</span>
+            <template lwc:if={hasSubtitle}>
+                <span class="card-subtitle">{subtitle}</span>
+            </template>
+        </span>
+    </a>
+</template>

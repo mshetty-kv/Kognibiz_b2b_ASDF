@@ -312,4 +312,180 @@
         <shortDescription>AmzAddr ErrorInvalidRequest</shortDescription>
         <value>Please check the address details and try again.</value>
     </labels>
+    <labels>
+        <fullName>AmzAcct_PageTitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct PageTitle</shortDescription>
+        <value>Your Account</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_GridAssistive</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct GridAssistive</shortDescription>
+        <value>Account management sections</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_FallbackTitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct FallbackTitle</shortDescription>
+        <value>Account section</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_ProfileTitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct ProfileTitle</shortDescription>
+        <value>Your Profile</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_ProfileSubtitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct ProfileSubtitle</shortDescription>
+        <value>Edit your name, email, and mobile number</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_OrdersTitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct OrdersTitle</shortDescription>
+        <value>Your Orders</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_OrdersSubtitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct OrdersSubtitle</shortDescription>
+        <value>Track, return, or buy things again</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_QuotesTitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct QuotesTitle</shortDescription>
+        <value>Your Quotes</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_QuotesSubtitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct QuotesSubtitle</shortDescription>
+        <value>Review quote requests and turn them into orders</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_ListsTitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct ListsTitle</shortDescription>
+        <value>Your Lists</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_ListsSubtitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct ListsSubtitle</shortDescription>
+        <value>View, manage, and reorder from saved lists</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_PurchaseOrdersTitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct PurchaseOrdersTitle</shortDescription>
+        <value>Purchase Orders</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_PurchaseOrdersSubtitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct PurchaseOrdersSubtitle</shortDescription>
+        <value>Manage PO numbers, budgets, and spend</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_AddressesTitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct AddressesTitle</shortDescription>
+        <value>Your Addresses</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_AddressesSubtitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct AddressesSubtitle</shortDescription>
+        <value>Add, edit, or remove addresses</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_DepartmentTitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct DepartmentTitle</shortDescription>
+        <value>Your Department</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_DepartmentSubtitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct DepartmentSubtitle</shortDescription>
+        <value>Manage departments, members, and budgets</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_ContactTitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct ContactTitle</shortDescription>
+        <value>Contact Us</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_ContactSubtitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct ContactSubtitle</shortDescription>
+        <value>Get help with orders, billing, or your account</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_BackToAccount</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct BackToAccount</shortDescription>
+        <value>Back to Your Account</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_BreadcrumbAssistive</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct BreadcrumbAssistive</shortDescription>
+        <value>Breadcrumb</value>
+    </labels>
+    <labels>
+        <fullName>AmzAcct_OrderDetailTitle</fullName>
+        <categories>AmazonAccountDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AmzAcct OrderDetailTitle</shortDescription>
+        <value>Order Details</value>
+    </labels>
 </CustomLabels>

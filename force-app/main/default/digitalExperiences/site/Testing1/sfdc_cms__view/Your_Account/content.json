@@ -1,0 +1,114 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Your Account",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "dxpStyle": {
+                  "padding": {
+                    "bottom": "1rem",
+                    "left": "1rem",
+                    "right": "1rem",
+                    "top": "1rem"
+                  }
+                },
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "1100px",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"59055caa-75bb-42ba-9ba0-a48b7fdd54e4\",\"columns\":[{\"UUID\":\"23c3426a-a301-49d1-b983-1a4a3ad90aa0\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "addressesAccessObject": "ContactPointAddress",
+                        "addressesEnabled": true,
+                        "addressesPage": "Address_List",
+                        "contactAccessObject": "",
+                        "contactEnabled": true,
+                        "contactPage": "contactus__c",
+                        "departmentAccessObject": "",
+                        "departmentEnabled": true,
+                        "departmentPage": "my_department__c",
+                        "dxpStyle": {},
+                        "listsAccessObject": "",
+                        "listsEnabled": true,
+                        "listsPage": "Wishlist",
+                        "ordersAccessObject": "OrderSummary",
+                        "ordersEnabled": true,
+                        "ordersPage": "object:OrderSummary",
+                        "profileAccessObject": "",
+                        "profileEnabled": true,
+                        "profilePage": "My_Profile",
+                        "purchaseOrdersAccessObject": "",
+                        "purchaseOrdersEnabled": true,
+                        "purchaseOrdersPage": "My_Purchase_Orders__c",
+                        "quotesAccessObject": "",
+                        "quotesEnabled": true,
+                        "quotesPage": "Quote_Summary_List",
+                        "showHeading": true
+                      },
+                      "definition": "c:amazonAccountDashboard",
+                      "id": "967d0262-496e-4866-a59d-c29294193089",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "23c3426a-a301-49d1-b983-1a4a3ad90aa0",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "59055caa-75bb-42ba-9ba0-a48b7fdd54e4",
+              "type": "component"
+            }
+          ],
+          "id": "6a02763c-2ea3-4852-bbe8-854f3a9b52b5",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "",
+                "dxpStyle": {},
+                "pageTitle": "Your Account",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "0f753b4d-86c2-451f-bb8d-096aea8cbf9a",
+              "type": "component"
+            }
+          ],
+          "id": "7ac6f9bd-23fc-4404-a268-2cbbde78cfee",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "309e3b21-c89f-4d3f-ad7f-22cdc222f545",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "MyAccountFullWidth",
+    "viewType": "custom-your-account"
+  },
+  "urlName": "your-account"
+}

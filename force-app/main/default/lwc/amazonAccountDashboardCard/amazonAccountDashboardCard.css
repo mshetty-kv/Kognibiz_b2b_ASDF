@@ -1,0 +1,82 @@
+@import "c/officeDepotTokens";
+
+:host {
+    display: block;
+    height: 100%;
+}
+
+.account-card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--od-gap);
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 100px;
+    padding: var(--od-gap) 18px;
+    border: 1px solid var(--od-border);
+    border-radius: var(--od-radius);
+    background: var(--od-bg-card);
+    color: var(--od-text);
+    font-family: var(--od-font);
+    text-decoration: none;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.account-card:hover {
+    background: var(--od-bg-band);
+    box-shadow: var(--od-shadow-card);
+    text-decoration: none;
+    color: var(--od-text);
+}
+
+/* The site theme underlines focused/visited links; a card is a block target, not inline text. */
+.account-card:link,
+.account-card:visited,
+.account-card:focus,
+.account-card:active {
+    color: var(--od-text);
+    text-decoration: none;
+    outline: none;
+}
+
+.account-card:focus-visible {
+    outline: none;
+    box-shadow: var(--od-focus-ring);
+}
+
+.card-icon {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--od-bg-band);
+}
+
+.card-icon-glyph {
+    --slds-c-icon-color-foreground-default: var(--od-accent-hover);
+    --sds-c-icon-color-foreground-default: var(--od-accent-hover);
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding-top: 2px;
+}
+
+.card-title {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--od-text);
+}
+
+.card-subtitle {
+    margin-top: var(--od-gap-xs);
+    font-size: var(--od-fs-md);
+    line-height: 1.4;
+    color: var(--od-text-secondary);
+}

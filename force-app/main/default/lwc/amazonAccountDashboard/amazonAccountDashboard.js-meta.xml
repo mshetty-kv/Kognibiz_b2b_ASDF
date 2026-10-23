@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Amazon Account Dashboard</masterLabel>
+    <description>Amazon Business-style "Your Account" card grid replacing the My Account sidebar on the account landing page (FS-001).</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="showHeading" type="Boolean" default="true" label="Show page heading"/>
+            <property name="profileEnabled" type="Boolean" default="true" label="Your Profile: show card"/>
+            <property name="profilePage" type="String" default="My_Profile" label="Your Profile: page (route API name, /path, or object:ApiName)"/>
+            <property name="profileAccessObject" type="String" default="" label="Your Profile: hide unless user can read this object (blank = always)"/>
+            <property name="ordersEnabled" type="Boolean" default="true" label="Your Orders: show card"/>
+            <property name="ordersPage" type="String" default="object:OrderSummary" label="Your Orders: page (route API name, /path, or object:ApiName)"/>
+            <property name="ordersAccessObject" type="String" default="OrderSummary" label="Your Orders: hide unless user can read this object (blank = always)"/>
+            <property name="quotesEnabled" type="Boolean" default="true" label="Your Quotes: show card"/>
+            <property name="quotesPage" type="String" default="Quote_Summary_List" label="Your Quotes: page (route API name, /path, or object:ApiName)"/>
+            <property name="quotesAccessObject" type="String" default="" label="Your Quotes: hide unless user can read this object (blank = always)"/>
+            <property name="listsEnabled" type="Boolean" default="true" label="Your Lists: show card"/>
+            <property name="listsPage" type="String" default="Wishlist" label="Your Lists: page (route API name, /path, or object:ApiName)"/>
+            <property name="listsAccessObject" type="String" default="" label="Your Lists: hide unless user can read this object (blank = always)"/>
+            <property name="purchaseOrdersEnabled" type="Boolean" default="true" label="Purchase Orders: show card"/>
+            <property name="purchaseOrdersPage" type="String" default="My_Purchase_Orders__c" label="Purchase Orders: page (route API name, /path, or object:ApiName)"/>
+            <property name="purchaseOrdersAccessObject" type="String" default="" label="Purchase Orders: hide unless user can read this object (blank = always)"/>
+            <property name="addressesEnabled" type="Boolean" default="true" label="Your Addresses: show card"/>
+            <property name="addressesPage" type="String" default="Address_List" label="Your Addresses: page (route API name, /path, or object:ApiName)"/>
+            <property name="addressesAccessObject" type="String" default="ContactPointAddress" label="Your Addresses: hide unless user can read this object (blank = always)"/>
+            <property name="departmentEnabled" type="Boolean" default="true" label="Your Department: show card"/>
+            <property name="departmentPage" type="String" default="my_department__c" label="Your Department: page (route API name, /path, or object:ApiName)"/>
+            <property name="departmentAccessObject" type="String" default="" label="Your Department: hide unless user can read this object (blank = always)"/>
+            <property name="contactEnabled" type="Boolean" default="true" label="Contact Us: show card"/>
+            <property name="contactPage" type="String" default="contactus__c" label="Contact Us: page (route API name, /path, or object:ApiName)"/>
+            <property name="contactAccessObject" type="String" default="" label="Contact Us: hide unless user can read this object (blank = always)"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

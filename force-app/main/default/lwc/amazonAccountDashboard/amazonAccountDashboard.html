@@ -1,0 +1,25 @@
+<template>
+    <template lwc:if={isAuthenticated}>
+        <section class="account-dashboard">
+            <template lwc:if={displayHeading}>
+                <h1 class="page-title">{labels.pageTitle}</h1>
+            </template>
+            <template lwc:if={hasCards}>
+                <ul class="card-grid" aria-label={labels.gridAssistive}>
+                    <template for:each={cards} for:item="card">
+                        <li key={card.key} class="grid-item">
+                            <c-amazon-account-dashboard-card
+                                card-key={card.key}
+                                card-title={card.title}
+                                subtitle={card.subtitle}
+                                icon-name={card.icon}
+                                href={card.href}
+                                oncardselect={handleCardSelect}
+                            ></c-amazon-account-dashboard-card>
+                        </li>
+                    </template>
+                </ul>
+            </template>
+        </section>
+    </template>
+</template>

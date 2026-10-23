@@ -1,0 +1,167 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Contact Us",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "dxpStyle": {
+                  "padding": {
+                    "top": "1.5rem",
+                    "bottom": "0.5rem",
+                    "left": "1rem",
+                    "right": "1rem"
+                  }
+                },
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "1100px",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"24461d75-4e85-41cf-a409-abe1e0fb2107\",\"columns\":[{\"UUID\":\"f3d3c1e6-07ef-4481-a393-d17ad0df2d57\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "targetPage": "Your_Account__c",
+                        "currentPage": "contact"
+                      },
+                      "definition": "c:amazonAccountBackNav",
+                      "id": "b246f689-3864-49a3-aa8f-3beb3eb378ef",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "f3d3c1e6-07ef-4481-a393-d17ad0df2d57",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "24461d75-4e85-41cf-a409-abe1e0fb2107",
+              "type": "component"
+            },
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "dxpStyle": {},
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "1100px",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"959e1c0b-ab7c-4f09-9958-d24cfd746e80\",\"columns\":[{\"UUID\":\"4db4aea6-f0b7-4fb5-8af3-e9db711883da\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "accountNamePlaceholder": "Account Name",
+                        "backToHomeFontSize": "16px",
+                        "backToHomeLabel": "Back to Home",
+                        "backToHomeUrl": "",
+                        "buttonBackgroundColor": "rgb(14, 100, 196)",
+                        "buttonBorderColor": "#1589ee",
+                        "buttonBorderRadius": "8px",
+                        "buttonBorderWidth": "0px",
+                        "buttonFontSize": "16px",
+                        "buttonHeight": "48px",
+                        "buttonTextColor": "#ffffff",
+                        "buttonWidth": "160px",
+                        "cardBackgroundColor": "#ffffff",
+                        "cardBorderRadius": "12px",
+                        "caseOriginPlaceholder": "Case Origin",
+                        "descriptionPlaceholder": "Description",
+                        "dxpStyle": {},
+                        "errorBackgroundColor": "#fdeaea",
+                        "errorTextColor": "#c23934",
+                        "fieldLabelFontSize": "11px",
+                        "fontFamily": "Arial, Helvetica, sans-serif",
+                        "fontSize": "14px",
+                        "formMaxWidth": "100%",
+                        "fullNamePlaceholder": "Full Name",
+                        "inputBackgroundColor": "rgb(255, 255, 255)",
+                        "inputBorderColor": "rgb(54, 154, 240)",
+                        "inputBorderRadius": "8px",
+                        "inputBorderWidth": "1px",
+                        "inputHeight": "4rem",
+                        "pageBackgroundColor": "rgb(255, 255, 255)",
+                        "pageSidePadding": "0px",
+                        "placeholderColor": "rgb(168, 194, 224)",
+                        "showBackToHome": true,
+                        "subjectPlaceholder": "Subject",
+                        "successBackgroundColor": "rgb(169, 194, 232)",
+                        "successMessageText": "Case created successfully! Our Team will contact you soon.",
+                        "successTextColor": "rgb(255, 255, 255)",
+                        "textColor": "#333333",
+                        "title": "Contact Us",
+                        "titleColor": "rgb(21, 137, 238)",
+                        "titleFontSize": "28px"
+                      },
+                      "definition": "c:customContactCaseForm",
+                      "id": "fd1a5a72-422d-43c6-83dc-ee0684aacb53",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "4db4aea6-f0b7-4fb5-8af3-e9db711883da",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "959e1c0b-ab7c-4f09-9958-d24cfd746e80",
+              "type": "component"
+            }
+          ],
+          "id": "6e9792bd-613f-42e1-a501-2c27e192eae4",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "",
+                "dxpStyle": {},
+                "pageTitle": "Contact Us",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "5c1f256c-96e2-401b-9410-cee4f132cf5c",
+              "type": "component"
+            }
+          ],
+          "id": "e01de498-8fed-482d-866d-04364202fe11",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "4a6aad8f-572a-4b92-acde-318d76b4f960",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "MyAccountFullWidth",
+    "viewType": "custom-contact-us"
+  },
+  "urlName": "contact-us"
+}

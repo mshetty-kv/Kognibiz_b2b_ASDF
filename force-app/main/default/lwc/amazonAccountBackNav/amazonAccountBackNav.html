@@ -1,0 +1,25 @@
+<template>
+    <template lwc:if={isReady}>
+        <div class="back-nav">
+            <nav class="breadcrumb" aria-label={labels.breadcrumbAssistive}>
+                <ol class="crumbs">
+                    <li class="crumb">
+                        <a class="crumb-link" href={href} onclick={handleNavigate}>{rootLabel}</a>
+                    </li>
+                    <template lwc:if={hasCurrentTitle}>
+                        <li class="crumb crumb-current">
+                            <span class="crumb-separator" aria-hidden="true">&rsaquo;</span>
+                            <span aria-current="page">{currentTitle}</span>
+                        </li>
+                    </template>
+                </ol>
+            </nav>
+            <a class="back-button" href={href} onclick={handleNavigate}>
+                <svg class="back-chevron" aria-hidden="true" focusable="false" viewBox="0 0 16 16" width="16" height="16">
+                    <path d="M10.5 2.5 5 8l5.5 5.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span>{labels.backToAccount}</span>
+            </a>
+        </div>
+    </template>
+</template>

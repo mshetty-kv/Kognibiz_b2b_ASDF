@@ -1,0 +1,44 @@
+@import "c/officeDepotTokens";
+
+.account-dashboard {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: var(--od-gap) var(--od-gap) var(--od-gap-lg);
+    box-sizing: border-box;
+    font-family: var(--od-font);
+}
+
+.page-title {
+    margin: 0 0 var(--od-gap-lg);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--od-text);
+}
+
+/* Mobile first: one column below the SLDS medium breakpoint (48em). */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.grid-item {
+    min-width: 0;
+}
+
+@media (min-width: 48em) {
+    .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Three columns once each card keeps ~300px (SLDS large breakpoint 64em). */
+@media (min-width: 64em) {
+    .card-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

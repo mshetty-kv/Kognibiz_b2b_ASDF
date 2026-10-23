@@ -1,0 +1,140 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "My Department",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "dxpStyle": {
+                  "padding": {
+                    "top": "1.5rem",
+                    "bottom": "0.5rem",
+                    "left": "1rem",
+                    "right": "1rem"
+                  }
+                },
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "1100px",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"6348b1a7-e208-4225-be67-977b7ee10300\",\"columns\":[{\"UUID\":\"8636dfed-5044-4c4e-b189-c20c844eab64\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "targetPage": "Your_Account__c",
+                        "currentPage": "department"
+                      },
+                      "definition": "c:amazonAccountBackNav",
+                      "id": "39fb6318-f856-43ce-886c-7cddb4deb233",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "8636dfed-5044-4c4e-b189-c20c844eab64",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "6348b1a7-e208-4225-be67-977b7ee10300",
+              "type": "component"
+            },
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "dxpStyle": {},
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "1100px",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"95490430-cab4-488d-8c12-c05914709cc1\",\"columns\":[{\"UUID\":\"1bb5417e-32dc-4937-a7cf-72e918fd91bd\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "bodyFontSize": "14px",
+                        "bodyFontWeight": "400",
+                        "bodyTextColor": "#1c1c1c",
+                        "cardIconName": "standard:groups",
+                        "dxpStyle": {},
+                        "headerFontSize": "28px",
+                        "headerFontWeight": "700",
+                        "headerTextColor": "#032d60",
+                        "modalHeadingFontSize": "28px",
+                        "modalHeadingFontWeight": "700",
+                        "modalHeadingTextColor": "#032d60",
+                        "subHeaderFontSize": "14px",
+                        "subHeaderFontWeight": "600",
+                        "subHeaderTextColor": "#444"
+                      },
+                      "definition": "c:kvDepartmentManagement",
+                      "id": "3a75dcb7-8d82-42c7-a43d-37775efe3fe8",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "1bb5417e-32dc-4937-a7cf-72e918fd91bd",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "95490430-cab4-488d-8c12-c05914709cc1",
+              "type": "component"
+            }
+          ],
+          "id": "9c75c84f-1538-47a1-a251-c3bd9e2c1990",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "",
+                "dxpStyle": {},
+                "pageTitle": "My Department",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "b6abd3ca-df83-48f9-beb7-8342d706bb10",
+              "type": "component"
+            }
+          ],
+          "id": "0425bdb0-0486-475c-a427-34808d089865",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "c9f30ec7-800d-4b2c-b1ec-a98d170b5402",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "MyAccountFullWidth",
+    "viewType": "custom-my-department"
+  },
+  "urlName": "my-department"
+}

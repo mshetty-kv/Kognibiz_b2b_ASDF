@@ -1,86 +1,132 @@
 {
-  "type" : "sfdc_cms__view",
-  "title" : "Address List",
-  "contentBody" : {
-    "component" : {
-      "children" : [
+  "type": "sfdc_cms__view",
+  "title": "Address List",
+  "contentBody": {
+    "component": {
+      "children": [
         {
-          "children" : [
+          "children": [
             {
-              "attributes" : {
-                "backgroundImageConfig" : "",
-                "backgroundImageOverlay" : "rgba(0,0,0,0)",
-                "componentSpacerSize" : "",
-                "dxpStyle" : {
-                  "padding" : {
-                    "bottom" : "1rem",
-                    "left" : "1rem",
-                    "right" : "1rem",
-                    "top" : "1rem"
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "dxpStyle": {
+                  "padding": {
+                    "top": "1.5rem",
+                    "bottom": "0.5rem",
+                    "left": "1rem",
+                    "right": "1rem"
                   }
                 },
-                "layoutDirectionDesktop" : "row",
-                "layoutDirectionMobile" : "column",
-                "layoutDirectionTablet" : "column",
-                "maxContentWidth" : "",
-                "sectionColumnGutterWidth" : "",
-                "sectionConfig" : "{\"UUID\":\"571e53c3-3b4d-4563-a470-50037e5c6671\",\"columns\":[{\"UUID\":\"c4bc26e0-5382-4964-872c-0e29ea6d92d7\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
-                "sectionMinHeight" : "",
-                "sectionVerticalAlign" : "flex-start"
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "1100px",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"7e6dee78-03c7-4fec-adc8-3f025304c479\",\"columns\":[{\"UUID\":\"dff83b46-f0b4-45c1-8623-71e421baeb01\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
               },
-              "children" : [
+              "children": [
                 {
-                  "children" : [
+                  "children": [
                     {
-                      "attributes" : {
-                        "defaultCountryCode" : "US"
+                      "attributes": {
+                        "targetPage": "Your_Account__c",
+                        "currentPage": "addresses"
                       },
-                      "definition" : "c:amazonAddressBook",
-                      "id" : "fb8a010d-b2dc-498f-b576-a937470007a6",
-                      "type" : "component"
+                      "definition": "c:amazonAccountBackNav",
+                      "id": "00e5855d-edf8-4ca4-8ee4-688d2a1987aa",
+                      "type": "component"
                     }
                   ],
-                  "id" : "c4bc26e0-5382-4964-872c-0e29ea6d92d7",
-                  "name" : "col1",
-                  "title" : "Column 1",
-                  "type" : "region"
+                  "id": "dff83b46-f0b4-45c1-8623-71e421baeb01",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
                 }
               ],
-              "definition" : "community_layout:section",
-              "id" : "571e53c3-3b4d-4563-a470-50037e5c6671",
-              "type" : "component"
+              "definition": "community_layout:section",
+              "id": "7e6dee78-03c7-4fec-adc8-3f025304c479",
+              "type": "component"
+            },
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "dxpStyle": {
+                  "padding": {
+                    "bottom": "1rem",
+                    "left": "1rem",
+                    "right": "1rem",
+                    "top": "1rem"
+                  }
+                },
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "1100px",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"571e53c3-3b4d-4563-a470-50037e5c6671\",\"columns\":[{\"UUID\":\"c4bc26e0-5382-4964-872c-0e29ea6d92d7\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "defaultCountryCode": "US",
+                        "dxpStyle": {}
+                      },
+                      "definition": "c:amazonAddressBook",
+                      "id": "fb8a010d-b2dc-498f-b576-a937470007a6",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "c4bc26e0-5382-4964-872c-0e29ea6d92d7",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "571e53c3-3b4d-4563-a470-50037e5c6671",
+              "type": "component"
             }
           ],
-          "id" : "59b3c034-8572-4e00-ba49-680d03e6d365",
-          "name" : "content",
-          "title" : "Content",
-          "type" : "region"
+          "id": "59b3c034-8572-4e00-ba49-680d03e6d365",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
         },
         {
-          "children" : [
+          "children": [
             {
-              "attributes" : {
-                "dxpStyle" : {},
-                "recordId" : "{!recordId}"
+              "attributes": {
+                "dxpStyle": {},
+                "recordId": "{!recordId}"
               },
-              "definition" : "community_builder:seoAssistant",
-              "id" : "915df437-023e-4063-86d5-b1c96ab95b3f",
-              "type" : "component"
+              "definition": "community_builder:seoAssistant",
+              "id": "915df437-023e-4063-86d5-b1c96ab95b3f",
+              "type": "component"
             }
           ],
-          "id" : "f70edaf6-3048-44a3-b3d3-cd7b179b2efc",
-          "name" : "sfdcHiddenRegion",
-          "title" : "sfdcHiddenRegion",
-          "type" : "region"
+          "id": "f70edaf6-3048-44a3-b3d3-cd7b179b2efc",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
         }
       ],
-      "definition" : "community_layout:sldsFlexibleLayout",
-      "id" : "30e7dffd-bd07-4ee2-928c-e2e073a085e2",
-      "type" : "component"
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "30e7dffd-bd07-4ee2-928c-e2e073a085e2",
+      "type": "component"
     },
-    "dataProviders" : [],
-    "themeLayoutType" : "MyAccount",
-    "viewType" : "addresses"
+    "dataProviders": [],
+    "themeLayoutType": "MyAccountFullWidth",
+    "viewType": "addresses"
   },
-  "urlName" : "address-list"
+  "urlName": "address-list"
 }
